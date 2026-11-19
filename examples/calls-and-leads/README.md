@@ -9,7 +9,7 @@ S=../../plugins/local-seo/skills/calls-and-leads/scripts
 python $S/funnel.py funnel.json > funnel-output.md
 ```
 
-- `local-seo-brief.md`: the brief the intake produces.
+- `local-seo-brief.md`: the brief written while orienting (from the site, the profile and the owner's answers to the few questions they couldn't settle).
 - `funnel.json`: Business Profile performance, phone log, quote inbox and diary counts for Aug to Oct 2025 and 2026, the script's input.
 - `observations.md`: what the owner reported and what the skill checked on the profile and homepage.
 - `funnel-output.md`: the script's output.

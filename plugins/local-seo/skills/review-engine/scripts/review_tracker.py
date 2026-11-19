@@ -4,9 +4,10 @@
 Input JSON:
   {
     "as_of": "2026-11-19",                         # optional, defaults to today
-    "services": ["physiotherapy", "sports massage", "back pain"],   # words customers use for the services
-    "places": ["Didsbury", "Withington", "Chorlton"],              # the town and nearby areas
+    "services": ["bike repair", "bike service", "puncture"],     # words customers use for the services
+    "places": ["Hackney", "Dalston", "Clapton"],                # the town and nearby areas
     "requests": {"2026-10": 48, "2026-11": 31},    # optional: review requests sent per month
+    "avoid_in_replies": ["your order number", "re:as (a|our) member"],   # optional: phrases replies must not use
     "reviews": [
       {"date": "2026-11-12", "rating": 5, "text": "...", "reply_date": "2026-11-13", "reply_text": "..."},
       {"date": "3 weeks ago", "rating": 2, "text": "...", "reply_date": null}
@@ -15,12 +16,22 @@ Input JSON:
 Relative dates ("3 weeks ago") are accepted. Leave reply_date null when there is no reply.
 
 Output: a month-by-month table, unanswered reviews (lowest rating first), and findings.
-With --regulated (clinics, healthcare, legal), also checks reply text for wording that
-confirms the reviewer was a patient or client, or mentions their care.
+
+Reply check, for businesses with rules on what a reply may say (confidentiality, a regulator,
+brand rules). It flags reply text that uses phrases the business must not use:
+  --confidential     built-in phrases that confirm the reviewer was a client or customer, or
+                     discuss their case, plus "your <service>" for every entry in "services"
+  --avoid PHRASE     a phrase to flag (repeatable); same as listing it in "avoid_in_replies"
+Phrases match case-insensitively as plain text; prefix one with "re:" for a regular expression.
+The check runs whenever any phrases are given.
+
+The thresholds in the findings (replies within 2 working days, half of reviews naming a
+service, a quarter naming a place) are Mani's working rules of thumb, not platform rules.
 
 Usage:
   python review_tracker.py reviews-log.json
-  python review_tracker.py reviews-log.json --months 6 --regulated
+  python review_tracker.py reviews-log.json --months 6 --confidential
+  python review_tracker.py reviews-log.json --avoid "your appointment" --avoid "re:as (a|our) member"
 """
 import argparse
 import json
@@ -31,14 +42,24 @@ from datetime import date, datetime, timedelta
 
 UNITS = {"day": 1, "week": 7, "month": 30, "year": 365}
 
-# Phrases in a reply that confirm someone was a patient or client, or discuss their care.
-CONFIRMS = [
-    r"your (treatment|appointment|visit|session|consultation|procedure|operation|surgery|scan|assessment|course|therapy|recovery|condition|injury|diagnosis|results?|care|case|matter|claim)",
-    r"(as|being) (a|our) (patient|client)", r"when (you|we) (saw|treated|visited|came in)", r"(seeing|treating) you",
-    r"(glad|pleased|happy) (we|the team) (could )?(help(ed)?|fix(ed)?|treat(ed)?) (you|your)",
-    r"\byour (knee|back|neck|shoulder|hip|ankle|skin|teeth|tooth|acne|scar|mole)\b",
+# --confidential: phrases in a reply that confirm someone was a client or customer, or discuss their case.
+# Add business-specific phrases with --avoid or "avoid_in_replies" rather than editing this list.
+CONFIDENTIAL = [
+    r"your (treatment|appointment|visit|session|consultation|procedure|assessment|course|recovery|condition|"
+    r"injury|diagnosis|results?|care|case|matter|claim|application|account|policy)\b",
+    r"(as|being) (a|our) (client|customer|member)", r"when (you|we) (saw|treated|visited|came in|met)",
+    r"(seeing|treating|advising) you",
+    r"(glad|pleased|happy) (we|the team) (could )?(help(ed)?|fix(ed)?|treat(ed)?|sort(ed)?) (you|your)",
     r"\b(our records|your records|your notes|your file)\b",
 ]
+
+
+def phrase_pattern(p):
+    """A plain phrase becomes a whole-word, case-insensitive match; "re:..." is used as a regex."""
+    p = str(p).strip()
+    if p.lower().startswith("re:"):
+        return p[3:].strip()
+    return r"(?<!\w)" + re.escape(p.lower()) + r"(?!\w)"
 
 
 def parse_date(s, today):
@@ -84,7 +105,11 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("log")
     ap.add_argument("--months", type=int, default=6, help="months to show (default 6)")
-    ap.add_argument("--regulated", action="store_true", help="check replies for wording that confirms a patient or client")
+    ap.add_argument("--confidential", action="store_true",
+                    help="flag built-in wording that confirms someone was a client or discusses their case")
+    ap.add_argument("--avoid", action="append", default=[], metavar="PHRASE",
+                    help="a phrase replies must not use (repeatable)")
+    ap.add_argument("--regulated", action="store_true", help=argparse.SUPPRESS)  # old name for --confidential
     a = ap.parse_args()
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
@@ -162,7 +187,7 @@ def main():
             findings.append(f"Replies: {round(100 * rate)}% of reviews from the last 90 days have a reply. Aim for all of them.")
         days = [(r["_rd"] - r["_d"]).days for r in total if r["_rd"]]
         if days and statistics.median(days) > 2:
-            findings.append(f"Reply speed: median {statistics.median(days):g} days. Aim for within 2 working days; negative reviews the same day.")
+            findings.append(f"Reply speed: median {statistics.median(days):g} days. Working rule: within 2 working days; negative reviews the same day.")
         if services:
             s = round(100 * sum(mentions(r.get("text"), services) for r in total) / len(total))
             if s < 50:
@@ -175,20 +200,29 @@ def main():
     if low_open:
         findings.append(f"{len(low_open)} review(s) rated 3 or below have no reply. Answer those first: the next customer reads how you handle problems.")
 
-    if a.regulated:
+    confidential = a.confidential or a.regulated
+    pats = [phrase_pattern(x) for x in list(data.get("avoid_in_replies") or []) + a.avoid]
+    if confidential:
+        own = [r"\byour (" + "|".join(re.escape(w.lower()) for w in services) + r")"] if services else []
+        pats = CONFIDENTIAL + own + pats
+    if pats:
+        try:
+            compiled = [re.compile(p, re.IGNORECASE) for p in pats]
+        except re.error as e:
+            sys.exit(f"Can't read a reply phrase as a regular expression: {e}")
         risky = []
-        pats = CONFIRMS + ([r"\byour (" + "|".join(re.escape(w.lower()) for w in services) + r")"] if services else [])
         for r in reviews:
             t = (r.get("reply_text") or "").lower()
-            hits = [m.group(0) for p in pats for m in [re.search(p, t)] if m]
+            hits = [m.group(0) for c in compiled for m in [c.search(t)] if m]
             if hits:
                 risky.append((r, hits))
         if risky:
-            findings.append(f"{len(risky)} repl{'y' if len(risky) == 1 else 'ies'} may confirm the reviewer was a patient or client, or mention their care. Edit them:")
+            why = " (it may confirm the reviewer was a client, or discuss their case)" if confidential else ""
+            findings.append(f"{len(risky)} repl{'y' if len(risky) == 1 else 'ies'} use wording the business's reply rules flag{why}. Edit them:")
             for r, hits in risky:
                 findings.append(f"  - Review of {r['_d'].isoformat()}: reply says \"{hits[0]}\"")
         else:
-            findings.append("Regulated check: no reply wording found that confirms a patient or client. Still read them: this check catches common phrases, not all.")
+            findings.append("Reply check: no flagged wording found. Still read them: the check catches the phrases it was given, not every way of saying them.")
 
     print("\n**Findings**\n" if findings else "\nNo findings.")
     for f_ in findings:

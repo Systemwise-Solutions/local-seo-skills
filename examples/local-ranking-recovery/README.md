@@ -9,10 +9,12 @@ Both businesses are fictional. The names, addresses, figures and events are made
 
 Each folder has:
 
-- `local-seo-brief.md`: the brief the intake produces.
+- `local-seo-brief.md`: the brief the skill wrote while orienting (from what it found, plus the user's answers to what was missing).
 - `recovery.json`: the series and events (the script's input).
 - `change-points.md`: the script's output.
 - `recovery-report.md`: the report the skill wrote from it.
+
+The sectors here (a plumbing and heating firm, a dental practice) are illustration only. The skill itself carries no sector rules: it reads each business through the lens in `references/loop.md`, which is why the first case leans on the category signature and the second on what a regulated practice can show as evidence.
 
 Run the script yourself:
 

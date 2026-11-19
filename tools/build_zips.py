@@ -38,6 +38,8 @@ def check(skill_md: pathlib.Path) -> str:
 
 
 def main():
+    import subprocess
+    subprocess.run([sys.executable, str(ROOT / "tools" / "sync_shared.py")], check=True)
     dist = ROOT / "dist"
     dist.mkdir(exist_ok=True)
     for skill_md in sorted(ROOT.glob("plugins/*/skills/*/SKILL.md")):

@@ -3,11 +3,12 @@
 Example Heating, Leeds, does not exist. The configs, answers and tool results here are made up to show the skill working. The config files contain placeholder values marked FAKE; none are real keys.
 
 Files:
-- `user-request.md`: what the user said, and their answers to the skill's questions.
+- `user-request.md`: what the user said, what the skill found without asking, and the one message it sent for the rest.
 - `fake-home/.claude.json` and `project/.mcp.json`: the fictional Claude Code config the skill found.
 - `check_env-output.md`: the real output of `check_env.py` run on those files, with two fictional environment variables set.
 - `output.md`: the skill's reply, from detection to verification. Tool results in it are fictional.
 - `local-seo-brief.md`: the brief the skill wrote, with the Data available section filled in.
+- `local-seo-log.md`: the log lines it added.
 
 To reproduce the script output (bash, from this folder):
 

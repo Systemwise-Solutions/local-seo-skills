@@ -1,15 +1,15 @@
 # Data sources
 
-The diagnosis works with no paid tools: the Business Profile dashboard, the phone system and the booking diary hold most of what's needed. Tools make it faster and give longer history. Say at the start which tier you're on.
+The diagnosis works with no paid tools: the Business Profile dashboard and the business's own records (phone log, inbox, booking, reservation or order system, till) hold most of what's needed. Tools make it faster and give longer history. Say at the start which tier you're on.
 
 ## Free
 
 - **Business Profile performance** (in the profile, Performance): views split by Search and Maps, calls, website clicks, direction requests, and bookings where a booking partner is connected. Ask for the same months in two periods. The data runs a few days behind. Business Profile chat ended in 2024, so there are no message counts.
 - **Phone system or call tracking log**: calls answered and missed, by hour and day if possible. Most VoIP systems and mobile networks can export this. Ask for counts, not recordings.
-- **Form inbox and booking system**: enquiries received and bookings made, by week.
-- **Job diary or CRM**: booked jobs, and where possible the source each customer gave.
-- **Phone tests the user can do**: ring the number on the profile at 8am, lunchtime and 5.30pm on a weekday and once on Saturday; tap the call button on the profile and the website from a mobile; submit the website form with "TEST" in the name and time how long until it arrives.
-- **What you can check yourself**: fetch the landing page; check the call link is a `tel:` link and the number matches; look at the profile's hours, phone, booking link, photos, reviews and services against the 3 businesses beside it.
+- **Form inbox, booking, reservation or ordering system**: enquiries, bookings and orders, by week. Most booking and ordering platforms export counts by source.
+- **Diary, CRM or till**: what became revenue (jobs, kept appointments, seated tables, sales), and where possible the source each customer gave.
+- **Phone tests the user can do**: ring the number on the profile at opening, at the busiest time and near closing, and once at the weekend if customers call then; start a booking or order and stop before paying; tap the call button on the profile and the website from a mobile; submit the website form with "TEST" in the name and time how long until it arrives.
+- **What you can check yourself**: fetch the landing page; check the call link is a `tel:` link and the number matches; look at the profile's hours, phone, booking link, photos, reviews and services against the businesses that show beside it.
 
 ## SearchOps (if connected)
 

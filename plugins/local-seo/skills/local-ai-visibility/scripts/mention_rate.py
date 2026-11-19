@@ -10,13 +10,13 @@ Two input formats.
 
 1. Text (easiest to paste). Header lines, then one block per run:
 
-    business: Example Physio | Example Physiotherapy | example-physio.co.uk
-    competitor: Avonside Physio | avonsidephysio.example
-    competitor: Downs Movement Clinic
-    === ChatGPT | best physio in Clifton
+    business: Example Co | Example Company Ltd | example-co.co.uk
+    competitor: Northgate Co | northgate.example
+    competitor: Riverside Co
+    === ChatGPT | who's good for <service> in Clifton?
     <the answer, pasted as is>
-    Sources: https://www.yell.com/..., doctify.com
-    === ChatGPT | best physio in Clifton
+    Sources: https://www.yell.com/..., a-directory.example
+    === ChatGPT | who's good for <service> in Clifton?
     <second run>
 
    After "business:" and "competitor:", the first item is the name; the rest are

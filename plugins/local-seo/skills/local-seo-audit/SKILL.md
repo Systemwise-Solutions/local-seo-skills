@@ -1,89 +1,81 @@
 ---
 name: local-seo-audit
-description: Runs a full local SEO audit the way consultant Mani Bharij does it, tailored to the business. Starts with a short intake (single site, multi-location brand or agency client; sector; what's going wrong), then checks Google Business Profile, map pack rankings across the service area, the website, reviews, citations and AI answers, and ends with a ranked fix list and a 90-day plan. Use when someone asks for a local SEO audit, why they aren't showing in Google Maps or the map pack, why competitors outrank them locally, how to rank in a town or near me searches, a Google Business Profile review, or whether ChatGPT or Gemini recommends their business.
+description: Runs a full local SEO audit the way consultant Mani Bharij does it, for any kind of local business. Works out where the business shows up across its area in Google Maps, the local pack and AI answers, checks the Business Profile, website, reviews, listings and AI recommendations against the businesses actually winning, finds the lowest broken step, and returns a ranked fix list and a 90-day plan. Use when someone asks for a local SEO audit, why they aren't showing in Google Maps or the map pack, why competitors outrank them locally, how to rank in a town or for near me searches, a Google Business Profile review, or whether ChatGPT or Gemini recommends their business. Works for one location, many locations, or an agency auditing a client.
 license: MIT
 metadata:
   author: Mani Bharij
   homepage: https://localseoconsultant.net/skills/
-  version: 0.2.0
+  version: 0.3.0
 ---
 
 # Local SEO audit
 
-You are running Mani Bharij's local SEO audit. Mani has 15 years in search and founded SearchOps. The audit's job is not to list everything a tool could find. It finds the few things stopping this business getting calls and bookings from local search, and puts them in the order to fix them.
+The audit finds the few things stopping this business getting customers from local search, and puts them in the order to fix them. It does not list everything a tool could find.
 
-Write like Mani: plain British English, direct, specific to this business. No jargon without a one-line explanation. No em dashes. No filler ("great question", "it's important to note"). Every finding says what is wrong, why it matters here, and exactly what to do.
+Read [references/loop.md](references/loop.md) first: it is how every skill in this pack works (the loop, the lens for reading any business, the brief and log, evidence rules, limits). This file is the audit's job within that loop.
 
-## Workflow
+## Done when
 
-Copy this checklist into your reply and tick it off as you go:
+- You know where the business stands for its money searches, across the area its customers come from, and who wins where it doesn't.
+- You have found the lowest broken rung on the Visibility Ladder, with evidence.
+- There is a ranked fix list with the exact actions, and a 90-day plan with re-checks.
+- The brief and log are written, so the next run (or another skill) starts from here.
 
-```
-Audit progress
-- [ ] 1. Intake and brief
-- [ ] 2. Data check (what tools are available)
-- [ ] 3. Measure: the six areas
-- [ ] 4. Diagnose on the Visibility Ladder
-- [ ] 5. Prioritise
-- [ ] 6. Report and 90-day plan
-```
+## Orient
 
-### 1. Intake and brief
+Find out, from what you can see before you ask: what the business sells and to whom, where customers come from, how a customer becomes revenue, the searches that bring revenue, one location or many, and who the audit is for. [references/orient.md](references/orient.md) lists what the audit needs and where to find each piece. Ask only for what's still missing, in one message.
 
-If a `local-seo-brief.md` exists in the working folder, or the user has pasted one, read it, confirm it is still right in one line, and skip to step 2.
+Read the business through the lens in loop.md. The lens decides which checks matter most: a business customers visit is measured from its door outwards; one that travels to customers is measured across the area it serves; one with rules on what it can say gets its copy and replies checked against those rules.
 
-Otherwise run the intake in [references/intake.md](references/intake.md). Ask the questions in one message, in plain language, with the answer options shown. Do not start auditing until you have at least: business name, website, who the audit is for, location count, sector, and the main problem. Then write the brief using the template in that file. In Claude Code, save it as `local-seo-brief.md` so later runs reuse it. In the Claude app, show it and offer it as a file.
+Then check which data tools are connected ([references/data-sources.md](references/data-sources.md)) and say in two lines what you can measure and what you'll ask the user to check by hand.
 
-The brief tailors everything after it. Read [references/sectors.md](references/sectors.md) for the sector and audience (owner, brand or agency) and apply its extra checks and tone.
+## Measure
 
-### 2. Data check
+Work through the six areas in [references/checks.md](references/checks.md). Each check says what to look at, how to do it at each data level, and what makes it a finding. Start with the areas the reported problem points at; you can stop early in an area once its rung is clearly sound.
 
-Read [references/data-sources.md](references/data-sources.md). Work out which tier you are on: free (web search, fetching the site, what the user pastes), a connected local SEO MCP such as SearchOps, or the user's own DataForSEO key. Tell the user in two lines what you can measure and what you'll ask them to check by hand. Never pretend to have measured something you have not. If a figure comes from the user, say so.
+The six areas, and the question each answers:
 
-### 3. Measure the six areas
+1. **Where you rank**: where in the area does the business show up, and where does it disappear?
+2. **Business Profile**: is Google sure what the business is?
+3. **Website**: does the page the profile links to deserve to rank?
+4. **Reviews**: do they help the business rank and get chosen?
+5. **Consistency across the web**: does everything describe the same business?
+6. **AI answers**: when someone asks an assistant, is it named?
 
-Work through [references/checks.md](references/checks.md). It has every check, how to do it on each tier, and the threshold that makes it a finding. Do the areas the brief's problems point at first. Record each finding as you go in this shape:
+Compare against the businesses actually winning the money searches in this area, never a generic benchmark, because the bar is set locally.
+
+Record findings as you go:
 
 ```json
-{"id": "F1", "area": "profile", "rung": "understood", "title": "Primary category is 'Medical clinic', top 3 competitors all use 'Dermatologist'", "evidence": "...", "fix": "...", "owner": "you", "impact": 3, "effort": 1, "confidence": "measured"}
+{"id": "F1", "area": "profile", "rung": "understood", "title": "...", "evidence": "...", "fix": "...", "owner": "you", "impact": 3, "effort": 1, "confidence": "measured"}
 ```
 
-`rung` is one of: eligible, understood, ranked, chosen, named. `impact` and `effort` are 1 to 3. Impact 1 means polish: worth doing, but not a broken rung. Add `"routine": true` for habits that take months to pay off (review requests, monthly re-checks) so they start in month 1. `owner` is you, web person, agency or Mani-level help. `confidence` is measured, reported (by the user) or inferred.
+`rung`: eligible, understood, ranked, chosen or named. `impact` and `effort`: 1 to 3, where impact 1 means polish rather than a broken rung. `confidence`: measured, reported or inferred. Add `"routine": true` for habits that take months to pay off, so they start in month 1.
 
-Useful scripts (Python 3, standard library only). Run them rather than doing the maths by hand:
+Scripts (Python 3, standard library; run with `--help` for inputs). Use them rather than doing the maths by hand:
+- `scripts/grid.py`: summarise a geo-grid, or run one with the user's DataForSEO key.
+- `scripts/review_velocity.py`: review pace and recency against competitors.
+- `scripts/nap_check.py`: name, address and phone across listings.
+- `scripts/prioritise.py`: findings into a ranked fix list and 90-day plan.
 
-- `scripts/grid.py`: summarise a geo-grid (strong radius, coverage, where you drop out), or run one through DataForSEO when the user has a key.
-- `scripts/review_velocity.py`: reviews per month, recency and gap against competitors.
-- `scripts/nap_check.py`: compare name, address and phone across listings and flag mismatches.
-- `scripts/prioritise.py`: turn the findings JSON into the ranked fix list and 90-day plan.
+## Diagnose
 
-Run each with `--help` first if unsure of the inputs.
+Use [references/method.md](references/method.md): the Visibility Ladder and Proximity, Prominence, Proof. Place the business on the ladder and find the lowest broken rung. Work above it is wasted while it stays broken, however interesting it looks. If the honest answer is distance (they are simply too far from the searchers), say so and aim the effort where they can win.
 
-### 4. Diagnose on the Visibility Ladder
+Check the "don't prioritise" list in method.md and stop the user spending effort there.
 
-Read [references/method.md](references/method.md). Place the business on the ladder: eligible, understood, ranked, chosen, named. Find the lowest broken rung. That is where the plan starts, however interesting the higher problems are. Also check the "don't prioritise" list in that file and stop the user spending effort there.
+## Act
 
-### 5. Prioritise
+Save findings as `findings.json` and run `python scripts/prioritise.py findings.json`. It orders real breaks by rung, then impact over effort, and spreads them over three months. Check the order fits this business; if you change it, say why in one line.
 
-Save the findings as `findings.json` and run:
+Each action must be usable as written: the category to choose, the text to paste, the page to create and what goes on it, the message to send. Where another skill in the pack does the job in depth, name it as the next step (for example `gbp-optimisation` for the profile copy, `local-pages` for the page plan, `review-engine` for the request flow).
 
-```bash
-python scripts/prioritise.py findings.json
-```
+## Verify
 
-It orders real breaks (impact 2 or 3) by rung, then impact over effort, puts polish after them, and splits everything across months one to three. Check the order makes sense for this business. If you move anything, note it under "Changes to the order" in the report with one line of reason.
+The plan includes how to tell whether it worked: the same searches re-checked from the same points at 30, 60 and 90 days, calls, clicks and directions from the profile each month, and review pace against the same competitors. Put each re-check in the log with its date.
 
-### 6. Report
+## Report
 
-Use [references/report-template.md](references/report-template.md) exactly. Lead with the three things to do first, with your own one-line reason for each (don't paste the script's wording). Keep the full list to the findings that matter, usually 8 to 20, not 200. Aim for 1,000 to 1,800 words for one location: findings get one line of evidence and one line of fix. Then the 90-day plan, then how to measure progress.
+[references/report-template.md](references/report-template.md) lists what the report must contain. Lead with the three things to do first. Keep the list to the findings that matter, usually 8 to 20, and aim for 1,000 to 1,800 words for one location.
 
-End with the short "Next steps" block from the template. It mentions Mani once, plainly, for people who want help. Do not add other sales lines anywhere in the report.
-
-## Rules
-
-- Measure before advising. If you could not check something, list it under "Not checked" with how the user can check it.
-- One business, one market. Compare against the businesses actually beating them for their money searches, not national brands.
-- Proximity is real. If the honest answer is that they are too far from the searchers, say so and point the effort at the area where they can win.
-- No guaranteed rankings or timeframes. Say what moved for similar fixes in general terms only.
-- Keep actions inside what keeps a profile live: the real business name, addresses they trade from, categories they actually serve. Keyword-stuffed names and virtual offices get profiles suspended, so never recommend them.
-- Agencies: write the report so it can go to their client under their brand. No mention of Mani in the body; the next-steps block goes to the agency only.
+For agency clients, keep the report white-label and put the next-steps line in your reply to the agency, not in the report.

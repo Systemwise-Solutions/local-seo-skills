@@ -4,18 +4,7 @@ Example Heating is fictional. The `check_env.py` output is real (run on the fict
 
 ---
 
-```
-Connect progress
-- [x] 1. Brief and goal
-- [x] 2. Detect what's already here
-- [x] 3. Ask where they run Claude and what they pay for
-- [x] 4. Recommend the smallest set
-- [x] 5. Connect, one tool at a time
-- [x] 6. Verify each connection
-- [x] 7. Record it in the brief
-```
-
-No brief in this folder, so I've written one from your answers (below). Goal: more calls, and find out whether you've slipped in Maps in north Leeds.
+No brief or log in this folder, so I've written both. Your goal: more calls, and whether you've slipped in Maps in north Leeds. You go to customers, about 8 miles from LS7, and work comes in by phone and the quote form on your site, so calls and form fills are what we need to see.
 
 ## What's already here
 
@@ -42,7 +31,7 @@ Search Console is useful (did the website's own traffic drop?) and you nearly ha
 - **DataForSEO**, pay as you go. Cheapest for a handful of grids: a 5 by 5 grid is 25 requests per search. The audit's `grid.py` runs it and prints the cost.
 - **Local Falcon**, credit based, with whatever's left of your free credits. Easier if you'll re-scan monthly, because it stores the history for you.
 
-My pick: DataForSEO for the first audit, because it's already connected and paid for. Decide on monthly tracking after the audit shows what's wrong. If you want Local Falcon for that later, reconnect it with sign-in (step 3 below) rather than the key in the URL.
+My pick: DataForSEO for the first audit, because it's already connected and paid for. Decide on monthly tracking after the audit shows what's wrong. If you want Local Falcon for that later, reconnect it with sign-in (3 under Connecting) rather than the key in the URL.
 
 **Business Profile performance** has no Google MCP. Take a screenshot of the performance view for the last 6 months and paste it here. That's free and enough for one location.
 
@@ -100,6 +89,14 @@ One gap: GA4 has no key events, so website calls and form fills aren't counted. 
 - Search Console: whether the website lost searches or clicks since the summer, by page.
 - Google Analytics: visits by landing page now; enquiries once key events are set.
 - Profile screenshots: calls, clicks and directions month by month.
+
+## Log lines added
+
+- 2026-11-19: Connected DataForSEO MCP (already configured) and verified with 1 billed Maps request.
+- 2026-11-19: Set DATAFORSEO_LOGIN for grid.py. No grid run yet; needs a yes on 25 requests per search.
+- 2026-11-19: Re-added Search Console at user scope; verified.
+- 2026-11-19: Connected Google Analytics MCP; no key events. Re-check 2026-12-19 that call and form events record.
+- 2026-11-19: Local Falcon left disconnected; revoke the old key this week.
 
 Next: run `local-seo-audit`. It will pick up the brief and start with a grid for "boiler repair leeds".
 

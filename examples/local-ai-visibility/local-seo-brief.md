@@ -4,7 +4,8 @@ Updated: 2026-11-19
 Audit for: owner
 Website: example-physio.co.uk (fictional)
 Profile: "Example Physio", Clifton, Bristol
-Sector: Clinic or healthcare (physiotherapy)
+Other names: Example Physiotherapy Clifton
+Shape: customers come to the practice in Clifton village, mostly from within about 2 miles; revenue by online booking and phone; regulated profession (HCPC), so no outcome claims
 Locations: 1
 
 ## Money searches
@@ -25,6 +26,6 @@ Competitors to beat: Avonside Physio, Downs Movement Clinic
 
 ## Notes
 - Moved from Hotwells to Clifton village in 2025.
-- Regulated sector: no outcome claims; physios are HCPC registered (user to confirm wording).
+- Physios are HCPC registered (user to confirm wording before it goes on the site).
 - AI assistants checked: ChatGPT, Gemini, Perplexity, Google AI Overviews
 - AI prompt set: prompt-set.md

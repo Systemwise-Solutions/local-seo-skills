@@ -22,9 +22,9 @@
 
 **Biggest drop: Website converts**
 
-- Website converts: form rate fell from 20.6% to 4.2% (-80%). Look at the landing page on a phone: call and book above the fold, the form actually sending, speed. At the old rate you'd have about 29 more form fills a month (inferred).
+- Website converts: form rate fell from 20.6% to 4.2% (-80%). Look at the landing page on a phone: the main action above the fold, whether a test one actually goes through and arrives, speed. At the old rate you'd have about 29 more form fills a month (inferred).
 - Calls get answered: answer rate fell from 89.8% to 69.7% (-22%). Look at who answers, when people call against opening hours, voicemail and call-back. At the old rate you'd have about 21 more answered calls a month (inferred).
-- Enquiries become bookings: booking rate fell from 32.2% to 27.2% (-15%). Look at speed of reply, quoting, lead quality (are they the jobs you want?). At the old rate you'd have about 5 more bookings a month (inferred).
+- Enquiries become bookings: booking rate fell from 32.2% to 27.2% (-15%). Look at speed of reply, quoting or confirming, no-shows, lead quality (are they the customers you want?). At the old rate you'd have about 5 more bookings a month (inferred).
 
 **Read with care**
 

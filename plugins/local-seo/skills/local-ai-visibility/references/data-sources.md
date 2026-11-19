@@ -6,7 +6,7 @@ The skill works with nothing but Claude and the user's own phone or laptop. A co
 
 - **Your web search**: which businesses and sources come up for the prompts and "best <service> in <area>". Builds the source map. It is not what any assistant said; never report it as such.
 - **Fetching pages**: the business's site, competitors' sites, directories, comparison articles.
-- **The user's manual runs**: the copy-paste block in prompts.md, 3 runs per prompt per assistant, pasted back. This is the measurement.
+- **The user's manual runs**: the copy-paste block in prompts.md, at least 3 runs per prompt per assistant, pasted back. This is the measurement.
 - **GA4 referrals by hand**: a referral or session source report filtered to assistant domains, pasted or screenshotted. A floor, not a total.
 
 ## Tier 1: a connected MCP
@@ -30,6 +30,6 @@ Tool data for the engines it tracks, manual runs for the rest, your web search f
 
 ## Rules
 
-- Never claim a measurement you didn't make.
-- If a tool call fails, say so and fall back to manual runs.
-- Keep personal data out of prompts. Never put the user's own name or contact details into an assistant.
+Evidence labels and the never-invent rule are in loop.md. Specific to this skill:
+- If a tool call fails, say so and fall back to manual runs, because a gap reported honestly is still usable and a guessed rate isn't.
+- Keep personal data out of prompts. Never put the user's own name or contact details into an assistant, because prompts may be stored by the assistant's provider.

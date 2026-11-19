@@ -21,11 +21,11 @@ Don't add figures beyond these. If the user asks for a stat you don't have, say 
 
 The same idea as a geo-grid: a pattern from many readings, not one reading.
 
-- **Same prompts, several runs, each assistant.** 3 runs per prompt per assistant is the minimum for a by-hand check; more is better. Fresh chat each time.
-- **Mention rate** = runs naming the business / runs, per assistant. Never pooled across assistants.
+- **Same prompts, several runs, each assistant.** 3 runs per prompt per assistant is Mani's working minimum for a by-hand check; more is better, because answers vary run to run. Fresh chat each time, so earlier answers don't carry over.
+- **Mention rate** = runs naming the business / runs, per assistant. Never pooled across assistants, because they draw on different sources and a pooled rate hides which one to fix.
 - **Who is named instead**: every business named, counted the same way. The one named in most runs is the benchmark.
 - **Sources**: every link or source the answers show, counted by domain. Where an assistant shows none, note "no sources shown".
-- **By prompt**: a business can be named for "back pain" and absent for "sports injury". That points at a specific gap.
+- **By prompt**: a business can be named for one need and absent for another it also serves (named for weddings, absent for corporate events). That points at a specific gap: nothing outside its own site connects it with that need.
 
 ## Reading the numbers
 
@@ -39,7 +39,7 @@ The same idea as a geo-grid: a pattern from many readings, not one reading.
 | Named, but described wrongly (old address, wrong services) | Consistency. Fix the sources the answers lean on. |
 | One run in three different from the others | Noise. Don't act on it. |
 
-Report a change between months only when it's bigger than one run per prompt and holds across more than one prompt.
+Report a change between months only when it's bigger than one run per prompt and holds across more than one prompt (Mani's working rule of thumb), because smaller moves are within run-to-run noise.
 
 ## Visits from assistants
 

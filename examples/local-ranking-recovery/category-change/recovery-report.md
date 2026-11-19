@@ -53,5 +53,14 @@ What didn't drop: Search Console non-branded clicks held at about 118 a week (-2
 - Add the category fix to `recovery.json` as a `profile_edit` event with its date and re-run `change_points.py`. A recovery shows as a rise in calls and "emergency plumber" coverage starting after that date.
 - Recovered means: "emergency plumber" top-3 coverage back above 50% and calls back near 30 a week. The drop showed within a week; a recovery can take longer, and no timeframe is guaranteed.
 
+If plumbing coverage hasn't moved by the second scan after the fix, the next hypothesis is Kirkstall Plumbing Co on the north-west side: compare its categories, services and reviews with yours there.
+
+## Log lines added
+```
+2026-11-19 | Drop found: profile calls -42% and Maps "emergency plumber" top-3 62% to 24% from w/c 17 Aug; organic held | Cause: primary category changed Plumber to Heating contractor on 12 Aug (high) | Re-check: n/a
+2026-11-19 | Fix: primary category back to Plumber, Heating contractor kept as additional | Re-check: each fortnightly scan to 2027-01-14; target top 3 above 50%, calls near 30/week
+2026-11-26 | Planned: add Boiler repair and Boiler servicing to profile services (one week after the category fix) | Re-check: boiler repair coverage at next two scans
+```
+
 ## Next steps
 If you'd rather have it done with you: localseoconsultant.net/consulting/local-seo-audit/

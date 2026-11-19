@@ -3,19 +3,19 @@
 
 Input JSON:
   {
-    "money_searches": ["boiler installation", "boiler repair"],
+    "money_searches": ["bike repair", "bike service"],
     "business": {
-      "name": "Example Heating Co | Boiler Repair Walthamstow",   # as it shows on the profile
-      "signage_name": "Example Heating Co",                      # optional: name on signage, van, registration
+      "name": "Example Cycles | Bike Repair Hackney",            # as it shows on the profile
+      "signage_name": "Example Cycles",                          # optional: name on signage, vehicle, registration
       "areas": ["Walthamstow", "Leyton"],                        # optional: towns it serves, for the name check
-      "primary": "Plumber",
+      "primary": "Bicycle store",
       "secondary": ["Gas engineer"],
-      "services": ["Boiler repair", "Leak detection"],
-      "offers": ["boiler installation", "bathroom fitting"]       # optional: what it really does, to sanity-check gaps
+      "services": ["Puncture repair", "Bike fitting"],
+      "offers": ["bike repair", "bike service", "e-bike repair"]  # optional: what it really does, to sanity-check gaps
     },
     "competitors": [
-      {"name": "Competitor A", "primary": "Heating contractor", "secondary": ["Plumber"],
-       "services": ["Boiler installation", "Boiler servicing"]},
+      {"name": "Competitor A", "primary": "Bicycle repair shop", "secondary": ["Bicycle store"],
+       "services": ["Bike repair", "Bike servicing"]},
       ...
     ]
   }
@@ -180,7 +180,7 @@ def main():
     # ------------------------------------------------------------ services
     print("\n## Services\n")
     ysv = b.get("services", []) or []
-    # Group competitor services: "New boiler installation" counts towards "Boiler installation".
+    # Group competitor services: "Full bike service" counts towards "Bike service".
     allsv = sorted({(key(x), x) for c in comps for x in (c.get("services") or [])}, key=lambda kx: (len(tokens(kx[1])), kx[1]))
     groups = []  # (key, label, token set)
     for k, x in allsv:

@@ -6,7 +6,7 @@ The audit works with no paid tools. Better data makes it sharper, mostly in area
 
 - **Web search and fetching pages**: the site, competitors' sites, directories, press, and what comes up for "best <service> in <area>".
 - **What the user pastes**: profile details, screenshots, review dates, Search Console exports, Business Profile performance (calls, website clicks, directions are in the profile dashboard for free).
-- **The 5-point phone check** for rankings: the user searches each money search from the business and about 1 mile north, east, south and west (scale up for trades), and reports the map pack position or screenshots it. Rough, but it shows the shape.
+- **The 5-point phone check** for rankings: the user searches each money search from the business and about 1 mile north, east, south and west (further for a business that travels to customers), and reports the map pack position or screenshots it. Rough, but it shows the shape.
 - **AI check by hand**: the user asks ChatGPT and Gemini the same question three times each and pastes the answers.
 
 Say what is rough. A 5-point check is a sketch, not a grid.
@@ -32,8 +32,8 @@ For Claude Code or any environment that can make network requests. DataForSEO is
 ```bash
 export DATAFORSEO_LOGIN=...      # from the DataForSEO API access page
 export DATAFORSEO_PASSWORD=...
-python scripts/grid.py scan --keyword "emergency plumber" --lat 51.5074 --lng -0.1278 --size 5 --spacing-km 1 --business "Example Plumbing" --out grid.json
-python scripts/grid.py summary grid.json --business "Example Plumbing"
+python scripts/grid.py scan --keyword "bike repair" --lat 51.5074 --lng -0.1278 --size 5 --spacing-km 1 --business "Example Cycles" --out grid.json
+python scripts/grid.py summary grid.json --business "Example Cycles"
 ```
 
 A 5 by 5 grid is 25 requests per search. Always tell the user the number of requests before running, and get a yes. Never ask the user to paste a key into chat; ask them to set it as an environment variable.

@@ -7,7 +7,7 @@ asks a question or rankings move, you know which edit caused it. Low-risk edits 
 description, attributes, photos) can go in together.
 
 Input JSON: a list of changes, each
-  {"field": "primary_category", "from": "Plumber", "to": "Heating contractor",
+  {"field": "primary_category", "from": "Bicycle store", "to": "Bicycle repair shop",
    "why": "2 of 3 competitors beating you use it", "location": "optional, for multi-location"}
 "to" is the exact text to paste. Long text (over 120 characters) is printed as a copy block
 under the table.

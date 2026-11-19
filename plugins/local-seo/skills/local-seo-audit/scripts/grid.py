@@ -5,7 +5,7 @@ SUMMARY (works anywhere, no network):
   python grid.py summary grid.json [--business "Name"]
 
   grid.json:
-    {"keyword": "emergency plumber", "business": "Example Plumbing",
+    {"keyword": "bike repair", "business": "Example Cycles",
      "center": [51.5074, -0.1278],
      "points": [{"lat": 51.5074, "lng": -0.1278, "rank": 2, "top": ["A", "B", "C"]}, ...]}
   "rank" is the business's map pack / Maps position at that point, or null if not in the results.
@@ -14,8 +14,8 @@ SUMMARY (works anywhere, no network):
 
 SCAN (needs network and a DataForSEO account; costs money):
   export DATAFORSEO_LOGIN=... DATAFORSEO_PASSWORD=...
-  python grid.py scan --keyword "emergency plumber" --lat 51.5074 --lng -0.1278 \
-      --size 5 --spacing-km 1 --business "Example Plumbing" --out grid.json [--yes]
+  python grid.py scan --keyword "bike repair" --lat 51.5074 --lng -0.1278 \
+      --size 5 --spacing-km 1 --business "Example Cycles" --out grid.json [--yes]
 
   Without --yes it only prints how many requests it would make. Each grid point is one
   Google Maps live request. Matches the business by name (case-insensitive substring)

@@ -96,7 +96,7 @@ Example Heating Co is a family-run team of Gas Safe registered engineers fitting
 
 > **Do you do landlord gas safety certificates?** Yes. We do the yearly gas safety check and CP12 record for rented homes across Walthamstow, Leyton and Chingford, and can arrange access with your tenant.
 
-(Check the accredited-installer line is true before posting it. You mentioned Worcester Bosch accreditation in the intake.)
+(Check the accredited-installer line is true before posting it. You mentioned Worcester Bosch accreditation when we started.)
 
 ## Photo plan
 
@@ -142,7 +142,15 @@ Delete the 6 stock photos once the real ones are up. Skip interior shots: custom
 
 **Access:** you stay the owner. Anyone else, including an agency, gets manager access and loses it when the work ends.
 
-## Log
+## Log lines added to local-seo-log.md
+
+```
+2026-11-19 | gbp-optimisation | Plan written: 16 changes, 23 Nov to 22 Dec. Name, address, primary category one a week. | Re-check 3 money searches from the 5 phone points around 2027-02-02.
+2026-11-19 | gbp-optimisation | Baseline (reported, last 3 months): 118 calls, 64 website clicks, 9 directions. | Compare monthly; full re-check 2027-02-02.
+2026-11-19 | gbp-optimisation | Old listing at Unit 4 to be marked moved via support. | Check status 2026-12-07.
+```
+
+## When each edit went live
 | Step | Made on | Live on Maps on | Google asked anything? | Notes |
 |---|---|---|---|---|
 | 1 | | | | |
@@ -162,4 +170,4 @@ Delete the 6 stock photos once the real ones are up. Skip interior shots: custom
 | 15 | | | | |
 | 16 | | | | |
 
-If you'd rather have it done with you: localseoconsultant.net/consulting/local-seo-audit/
+If you'd rather have it done with you: localseoconsultant.net/consulting/google-business-profile-optimisation/

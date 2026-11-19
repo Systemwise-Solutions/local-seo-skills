@@ -1,68 +1,60 @@
 # Writing the copy
 
-Write final text, ready to paste. Count characters and state the count. Plain British English, no em dashes, no superlatives the business can't prove ("best", "leading", "number one"). Specific facts beat adjectives.
+Write final text, ready to paste, and state the character count. Plain British English, no em dashes, no superlatives the business can't prove ("best", "leading", "number one"), because specific facts persuade the person choosing and unprovable claims don't. If there are rules on what the business can say (loop.md, the lens), check every line against them and flag wording for whoever signs it off.
 
-## Limits to write within
+## Limits
 
-| Field | Limit | Notes |
-|---|---|---|
-| Description | 750 characters | Lead with what and where. No links, offers, prices or phone numbers. |
-| Service description | 300 characters | One per service. |
-| Product description | 1,000 characters | Price or "from" price in the price field, not invented. |
-| Post | 1,500 characters | The first 2 lines show before "more". No phone numbers, emails or links in the text; use the button. |
-| Q&A answer | Keep under 300 characters | Answer from the business account. |
-
-Limits change; if the field refuses the text, shorten it rather than splitting it.
+Google sets limits on each text field and changes them. Before giving a count, check the current limit in the field itself or Business Profile Help. At the time of writing they were roughly: description 750 characters, service description 300, product description 1,000, post 1,500 (only the first couple of lines show before "more"). If the field refuses the text, shorten it rather than splitting it.
 
 ## Description
 
-Shape, in this order:
+Shape, in this order, because the person choosing reads the first sentence and maybe the second:
 
-1. What the business does and where, in one sentence a customer would understand. ("Gas Safe registered heating engineers fitting and repairing boilers across Walthamstow, Leyton and Chingford.")
-2. What it's known for or does most: the money services, in the words customers use.
-3. Who does the work: owner-run, named lead practitioner, team size, qualifications.
-4. Proof that can't be faked: years trading, registrations (Gas Safe, NICEIC, GMC, HCPC), manufacturer approvals, guarantees offered.
-5. How to start: "Call for a same-week quote" or "Book an initial assessment online". No phone number in the text.
+1. What the business does and where, in one sentence a customer would understand. ("Independent bike workshop servicing and repairing road, commuter and electric bikes in Hackney, with same-day fixes for most punctures and brakes.")
+2. What it does most: the money services, in the words customers use.
+3. Who does the work: owner-run, named lead, team size, qualifications.
+4. Proof that can't be faked: years trading, registrations or memberships, manufacturer or supplier approvals, guarantees.
+5. How to start: "Book a service online" or "Call for a quote". No phone number in the text.
 
-Avoid: towns listed in a row, every service ever offered, "we pride ourselves", "one-stop shop", claims about results (clinics: never).
+Avoid: towns listed in a row, every service ever offered, "we pride ourselves", "one-stop shop", and claims about outcomes the business can't stand behind.
 
 ## Service descriptions
 
-Shape: what it is, in plain words, who it's for, what's included or how long it takes, and where. 2 or 3 sentences, under 300 characters.
+Shape: what it is in plain words, who it's for, what's included or how long it takes, and where. Two or three sentences.
 
-> **Boiler installation**: New combi and system boilers fitted by our own Gas Safe engineers, with the old boiler removed and the system flushed. Fixed quote after a free home survey, across Walthamstow, Leyton and Chingford.
+> **Full bike service**: Gears and brakes adjusted, wheels trued, drivetrain cleaned and every bolt checked, usually ready the same day. Book online or drop in at our Hackney workshop.
 
 ## Products
 
-One product per packaged, priced offer: a name customers recognise, a photo of the real thing, the real price or "from" price, a two-line description and a link to the matching service page. If the business won't publish prices, use products for the free survey or consultation instead.
+One product per packaged, priced offer: a name customers recognise, a photo of the real thing, the real price or "from" price, a two-line description and a link to the matching page. If the business won't publish prices, use a product for the free consultation, quote or trial.
 
 ## Posts
 
-Write four, one for each of the next four weeks, from these types. Each: a plain first line that tells the customer something useful, 2 to 4 short sentences, and a button (Call, Book, Learn more).
+Write four, one for each of the next four weeks, from these types. Each: a plain first line that tells the customer something useful, two to four short sentences, and a button (Call, Book, Order, Learn more) that matches how this business turns a visitor into revenue.
 
-- **Seasonal:** what customers should do now ("Book your boiler service before the first cold week").
-- **Real work:** a job done in a named area, with a photo ("Replaced a 20-year-old back boiler in Leyton this week").
-- **Service:** one money service explained: what it involves, how long, what it costs from.
+- **Seasonal:** what customers should do now, before demand peaks.
+- **Real work:** something done recently, ideally in a named area, with a photo.
+- **Service or product:** one money offer explained: what it involves, how long, what it costs from.
 - **Offer or event:** only with a real end date.
 
-Posts help the person on the profile. Don't promise they will lift rankings.
+Posts help the person on the profile. Don't promise they lift rankings.
 
 ## Q&A
 
-Draft answers to the questions customers ask on the phone. 5 to 8, each answered in one or two sentences. Good sources: the receptionist or owner ("what do people always ask?"), competitor reviews, the website's FAQ. Where the profile has no Q&A section, put the same answers in the website FAQ and the service descriptions.
+Draft answers to the questions customers ask before buying: five to eight, each in one or two sentences. Good sources: whoever answers the phone ("what do people always ask?"), competitor reviews, the website FAQ. Where the profile has no Q&A section, put the same answers in the website FAQ and service descriptions.
 
 ## Photo plan
 
-Give a shot list, with how many and where each goes. Taken on a phone in daylight is fine. Real, recent, recognisable.
+Give a shot list with how many and where each goes, matched to the business's shape. Phone photos in daylight are fine; real, recent, recognisable.
 
-| Shot | How many | Notes |
+| Shot | When it applies | How many |
 |---|---|---|
-| Logo | 1 | Square, readable small. |
-| Cover | 1 | The most recognisable view: the shopfront, the team, or a van with livery. |
-| Exterior and signage | 2 to 3 | From the street, and the entrance close up. Helps people find it; useful if Google asks to verify. |
-| Interior | 3 to 5 | Reception, treatment rooms, workshop. (Service-area: skip.) |
-| Team | 2 to 4 | Named where they're happy to be. |
-| The work | 5 to 10, then 2 to 4 a month | Finished jobs, before and after where allowed. Clinics: only with written consent and within advertising rules; no treatment results for prescription-only medicines. |
-| Vans and kit | 1 to 3 | Trades: livery visible. |
+| Logo | Always | 1, square, readable small |
+| Cover | Always: the most recognisable view (frontage, the team, a liveried vehicle, the signature product) | 1 |
+| Exterior and entrance | Customers visit. Helps them find it, and useful if Google asks to verify | 2 to 3 |
+| Interior | Customers visit | 3 to 5 |
+| Team | Where people are happy to be shown | 2 to 4 |
+| The work or the product | Always | 5 to 10 now, then 2 to 4 a month |
+| Vehicles and kit | The business goes to customers | 1 to 3 |
 
-Upload a batch now, then a few each month. Remove or report customer photos that show a different business.
+If there are rules on what can be shown (customers' faces, results, regulated products), the shot list follows them and needs written consent where people are identifiable. Remove or report customer photos that show a different business.

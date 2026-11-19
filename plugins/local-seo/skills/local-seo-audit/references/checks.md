@@ -18,7 +18,7 @@ Question: where in the area does the business show up, and where does it disappe
 
 | Check | Free | With a scanning tool | Finding when |
 |---|---|---|---|
-| Map pack for each money search | Ask the user to search on their phone from 5 points: the business, and roughly 1 mile north, east, south and west (further for trades). Screenshot the map pack. Run grid.py on the results. | Run a grid per money search (SearchOps, other geo-grid MCP, or grid.py with DataForSEO). Size it to how far customers travel. | Not top 3 at the business's own location (eligibility or relevance problem). Top 3 at the door but out of the top 10 within the area customers come from. |
+| Map pack for each money search | Ask the user to search on their phone from 5 points: the business, and roughly 1 mile north, east, south and west (further for a business that travels to customers). Screenshot the map pack. Run grid.py on the results. | Run a grid per money search (SearchOps, other geo-grid MCP, or grid.py with DataForSEO). Size it to how far customers travel. | Not top 3 at the business's own location (eligibility or relevance problem). Top 3 at the door but out of the top 10 within the area customers come from. |
 | Maps vs local pack vs AI Mode | Not checkable free. List under "Not checked". | Compare the same search across surfaces where the tool supports it. | Big gaps between surfaces: note which surface the business loses on. |
 | Strong radius | From the 5-point check: rough only. | grid.py summary. | Strong radius smaller than the area customers come from. |
 | Edge competitors | Note who appears where the business drops out. | From the grid results. | The same 1 to 3 businesses take over. These become the competitors for every comparison below. |
@@ -34,11 +34,11 @@ Get the profile details by fetching the Maps listing if possible, otherwise ask 
 
 | Check | Finding when |
 |---|---|
-| Primary category | Different from what most of the 3 competitors use for the money search, or broader than the service (for example "Medical clinic" when competitors are "Dermatologist"). High impact, low effort. |
+| Primary category | Different from what most of the 3 competitors use for the money search, or broader than the service (a general category where the winners use a specific one). High impact, low effort. |
 | Secondary categories | Missing categories competitors use that match services the business really offers. |
 | Services | Money-search services not listed, or listed with vague names that don't match how people search. |
 | Business name | Contains keywords, locations or taglines that aren't on the signage. Suspension risk: fix before anything else. If competitors do it, don't copy; it gets profiles suspended. |
-| Address and service area | Address is a virtual office or somewhere the business doesn't trade. Suspension risk. Service area settings don't widen rankings, so don't treat them as a fix. |
+| Address and service area | Address is a virtual office or somewhere the business doesn't operate. Suspension risk. Service area settings don't widen rankings, so don't treat them as a fix. |
 | Website link | Points to a page that doesn't match the money searches. One location with one dominant service: link to that service's page. Several money searches: link to the homepage only if it clearly leads with them and links to each service page; otherwise link to the top revenue service. Multi-location: each profile links to its own location page, never the brand homepage. |
 | Hours, phone, booking link | Missing, wrong, or a call tracking number not set up as primary with the main number as additional. |
 | Photos | Few or only stock images compared with competitors. Impact is on being chosen, not ranking. |
@@ -81,7 +81,7 @@ python scripts/review_velocity.py reviews.json
 | Recency | Newest review older than the competitors' typical gap between reviews. |
 | Bursts | Most reviews arrived in one short burst, then stopped. |
 | Review text | Reviews rarely mention the service or the place. Fix: ask customers to say what was done and where, without scripting their words. |
-| Replies | Under most reviews have replies, or replies are generic. Regulated sectors: replies confirm someone was a patient or client. |
+| Replies | Under most reviews have replies, or replies are generic. Where the business has rules on what it can say, replies break them (for example confirming someone was a client when that's confidential). |
 | Request process | No routine. Recommend: SMS with a one-tap review link within the hour the job ends, one email follow-up two or three days later, QR code at the counter or on the invoice, and staff who know when to mention it. |
 | Fake or competitor reviews | Clear spam reviews present. Report them through the profile and keep the evidence. |
 

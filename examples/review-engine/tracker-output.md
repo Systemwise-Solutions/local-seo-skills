@@ -20,12 +20,12 @@
 - Uneven flow: the best month had 8 reviews against a median of 2. A routine flattens bursts.
 - No request counts supplied. Count requests sent each month (your SMS or booking tool shows it) so you can see which step fails.
 - Replies: 40% of reviews from the last 90 days have a reply. Aim for all of them.
-- Reply speed: median 8 days. Aim for within 2 working days; negative reviews the same day.
+- Reply speed: median 8 days. Working rule: within 2 working days; negative reviews the same day.
 - Only 40% of reviews in the last 90 days mention a service. Add the prompt to mention what was done, without scripting the words.
 - Only 20% mention a place. The request can ask which area they're in, or say 'it helps people nearby find us'.
 - 2 review(s) rated 3 or below have no reply. Answer those first: the next customer reads how you handle problems.
-- 4 replies may confirm the reviewer was a patient or client, or mention their care. Edit them:
-  - Review of 2026-09-28: reply says "your session"
+- 4 replies use wording the business's reply rules flag (it may confirm the reviewer was a client, or discuss their case). Edit them:
+  - Review of 2026-09-28: reply says "your back pain"
   - Review of 2026-08-15: reply says "your sports massage"
   - Review of 2026-07-19: reply says "your knee"
   - Review of 2026-06-25: reply says "glad we could help you"

@@ -16,8 +16,8 @@ Start from two lists: the domains the script counted from the answers, and the s
 | Type | Examples to look for | Check |
 |---|---|---|
 | The business's own site | Home, service pages, about, prices | Does it state the facts in section 4? Is the page the answers would need indexed? |
-| Directories | Yell, Thomson Local, sector directories (Doctify and Top Doctors for health, Checkatrade and TrustATrader for trades, the Law Society for solicitors), Apple Maps, Bing Places | Listed? Same name, address, phone? Services and description current? |
-| Review sites | Google, Trustpilot, sector review sites | Present? Review count and recency against the competitor named most. Does review text name the service and the place? |
+| Directories | General directories, Apple Maps, Bing Places, and the directories specific to this field: find them by seeing which ones rank for the prompts and which the answers cite, and add the public register of any regulator or professional body the business belongs to | Listed? Same name, address, phone? Services and description current? |
+| Review sites | Google, general review sites, and any review site specific to this field that ranks for the prompts | Present? Review count and recency against the competitor named most. Does review text name the service and the place? |
 | Comparison articles | "Best <service> in <area>" lists on local blogs, guides and magazines | Listed? If not, who wrote it, when, and is it updated? |
 | Local press and community | Local news sites, council and community pages, sponsors, associations | Any mention at all? |
 | Forums and video | Reddit threads for the city, local Facebook groups, YouTube | Who do people recommend, in their own words? |
@@ -34,9 +34,9 @@ Assistants seem to name businesses that several sources describe the same way. C
 - **Name**: the same everywhere, matching the signage. No keyword versions.
 - **Address and area**: current address everywhere; old addresses after a move are the most common fault.
 - **Phone**: one main number.
-- **What it does**: the same core services and specialisms. A site saying "sports injury specialists" while every directory says "general physiotherapy" splits the picture.
+- **What it does**: the same core services and specialisms. A site leading with a specialism while every directory lists only the general category splits the picture, so the assistant falls back on whoever is described the same way everywhere.
 - **Who it's for**: the same audience.
-- **Credentials and facts**: the same years trading, qualifications, memberships, team size.
+- **Credentials and facts**: the same years in business, qualifications, memberships, team size.
 
 If `local-seo-audit`'s `nap_check.py` is available in this environment, use it for name, address and phone. This skill doesn't ship it; do it by hand otherwise.
 
@@ -56,18 +56,18 @@ An assistant can only repeat what it can find stated clearly. Check the homepage
 
 - **What**: the service, in the words customers use.
 - **Where**: the town, neighbourhoods, and where they travel to (service-area businesses).
-- **For whom**: the people it suits ("runners and people with desk-job back pain").
+- **For whom**: the people or situations it suits, in the words its customers use in reviews.
 - **Prices**: a price or a "from" price, and what's included.
-- **Credentials**: qualifications, registrations and memberships that can be checked (for example HCPC registration for physios), years trading, team.
+- **Credentials**: qualifications, registrations and memberships a customer could check on a public register, years in business, team.
 - **Proof**: a number of reviews and rating, named awards, the kind of jobs done there.
-- **How to book**: hours, booking link, phone.
+- **How to buy or book**: hours, booking or order link, phone.
 
 Write the missing copy, ready to paste: short factual sentences near the top of the page, not buried in a long story. One fact per sentence. Use the same wording the profile and directories should use.
 
 Rules:
-- Only facts the user confirms. Never invent prices, credentials, years or awards; leave a marked gap for them to fill.
-- Regulated sectors: no prescription-only medicines advertised to the public in the UK, no claims of outcomes. Flag wording for their compliance lead.
-- A short facts block ("At a glance") is fine. A page written only for assistants isn't.
+- Only facts the user confirms. Never invent prices, credentials, years or awards, because an assistant will repeat them as true; leave a marked gap for them to fill.
+- If the lens found rules on what the business can say, check every line against them before writing, because a non-compliant claim costs more than a missing one. Outcome promises are the usual problem. Flag wording for whoever owns compliance.
+- A short facts block ("At a glance") is fine. A page written only for assistants isn't, because it gives customers nothing and there's no good evidence it helps.
 - Add or correct LocalBusiness schema so it matches the copy, if it's missing or wrong.
 
 ## 5. Turning gaps into actions
@@ -78,7 +78,7 @@ Rules:
 | A cited directory has old details | Correct it; ask for duplicates to be merged. | you | low |
 | A comparison article lists competitors, not the business | Email the author with a short, factual case and one thing their readers would care about. Accept no. Never pay for an editorial-looking placement without it being labelled. | you | medium |
 | No local press or community mentions | One realistic local story (a sponsorship, a community project, expert comment on something local). | you | medium |
-| Reviews don't mention the service or place | Ask customers to say what was done and where, without scripting their words. SMS with a one-tap link within the hour, one follow-up. | you | low, routine |
+| Reviews don't mention the service or place | Ask customers to say what was done and where, without scripting their words. Ask soon after the job or visit, with a one-tap link and one follow-up, because timing and ease get more reviews than anything else. `review-engine` covers the flow. | you | low, routine |
 | Site doesn't state the facts | Paste the copy from section 4 onto the homepage and service pages. | web person | low |
 | Forum threads recommend competitors | Nothing planted. If the business has a genuine account and can answer a question helpfully and openly, fine. Mostly, this follows from reviews and reputation. | you | low |
 | Described wrongly by an assistant | Fix the sources it leans on. Most assistants also have a feedback button on answers; worth using, but don't rely on it. | you | low |

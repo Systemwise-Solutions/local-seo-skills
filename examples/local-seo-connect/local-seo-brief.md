@@ -4,17 +4,20 @@ Updated: 2026-11-19
 Audit for: owner
 Website: example-heating.co.uk (fictional)
 Profile: "Example Heating", Leeds LS7
-Sector: Trade or home services (heating and plumbing)
+Shape: goes to customers from LS7, about 8 miles; revenue by phone call and quote form; no booking system
 Locations: 1
 
 ## Money searches
 1. boiler repair leeds
 2. boiler installation
-3. emergency plumber
+3. emergency boiler repair
 
 ## Market
 Customers come from: about 8 miles around LS7
 Competitors to beat: to find
+
+## Goal
+More calls; find out whether Maps rankings slipped in north Leeds
 
 ## Problems reported
 - "Calls have dropped since the summer"

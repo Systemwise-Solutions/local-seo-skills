@@ -4,6 +4,8 @@
 
 *Example Roofing and every figure here are fictional. This is the output the calls-and-leads skill produced from the files in this folder.*
 
+How you make money: phone calls and website quote requests, turned into booked jobs after a site visit. Calls bring most of the work, so the funnel uses the default fields (calls, form fills, bookings).
+
 ## Where the leak is
 People are still finding you: profile views are down only 4% on the same months last year, and website clicks from the profile are up 14% (reported). The enquiries are being lost after that. Your quote form has sent every request since June to a mailbox that no longer exists, and almost a third of calls now go unanswered, mostly before 8:30am and on Saturdays. At last year's rates that is about 29 quote requests and 21 answered calls a month you aren't getting (inferred), which goes a long way to explaining why bookings fell from 47 to 29 a month.
 
@@ -160,5 +162,10 @@ Make the call button a `tel:` link with the same number as the profile. Put the 
 - Rankings beyond your own area: views held, so not needed for this drop. Run `local-seo-audit` if you want to win more of Banstead and Worcester Park.
 - Enquiries lost since June: ask the web designer whether the form tool kept copies of submissions. If it did, ring those people this week.
 - Lead quality: not checked. If the calls that do come in are for jobs you don't want, note the job type on the tally for the 30 days.
+
+## Log lines added
+- 2026-11-19: quote form found sending to a closed mailbox since June; fix and test today. Re-check form fills weekly, full comparison on day 30.
+- 2026-11-19: missed-call text and own voicemail set; early and Saturday cover to decide. Re-check answer rate by hour weekly.
+- 2026-11-19: call and quote buttons moved above the fold on mobile. Re-check form rate and profile call rate at day 30 (read on day 34).
 
 If you'd rather have it done with you: localseoconsultant.net/consulting/local-seo-audit/

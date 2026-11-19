@@ -271,4 +271,9 @@ No street address, because the profile hides it. Name matches the profile exactl
 - Six weeks after launch: the same five points, the same searches, and calls, website clicks and enquiries by landing page.
 - Every quarter: re-run `town_score.py` with the new job counts. Kirkstall is likely to move to create first.
 
-If you'd rather have it done with you: localseoconsultant.net/consulting/local-seo-audit/
+## Log lines added
+- 2026-11-19: page plan agreed, 7 pages for launch (homepage, 3 services, Headingley, Rawdon and Yeadon, contact). Re-check rankings and enquiries by landing page 6 weeks after launch.
+- 2026-11-19: profile name kept as Holt Heating; website link set to homepage with UTM. Re-check profile clicks monthly.
+- 2026-11-19: Kirkstall, Bramley, Guiseley, Otley on hold for proof. Re-run town_score.py at the next quarterly review.
+
+If you'd rather have it done with you: localseoconsultant.net/consulting/local-landing-pages/

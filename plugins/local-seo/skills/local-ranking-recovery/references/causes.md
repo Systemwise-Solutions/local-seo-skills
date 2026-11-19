@@ -1,6 +1,8 @@
 # Causes and their signatures
 
-Each cause leaves a different pattern: which searches drop, on which surface, in what shape, and what stays put. Match the pattern, then run the confirming check. The confirming check is what moves confidence from medium to high.
+Each cause is a hypothesis, and each leaves a different pattern: which searches drop, on which surface, in what shape, and what stays put. Match the pattern, then run the confirming check, because timing alone fits several causes and the confirming check is what moves confidence from medium to high. Keep the causes you didn't pick, ranked: they are the next pass if the first fix doesn't bring the numbers back.
+
+Which causes are plausible depends on the shape of the business (the lens in loop.md). Address and pin causes weigh most when customers come to the business; hidden-address and service-area causes when it goes to them; filtering when it shares a building or a category cluster with others; shared causes when there are many locations.
 
 ## Contents
 1. Read the pattern first
@@ -41,7 +43,7 @@ Each cause leaves a different pattern: which searches drop, on which surface, in
 | Name changed | Name searches can wobble; a keyword-stuffed name may have given a short lift and then a suspension. | Edit history; signage photos. | Name exactly as on the signage and registration. |
 | Address or pin moved | The strong radius moves or shrinks around the new point. | Compare old and new grids: the centre of strength moved. | Correct the address and pin to where the business is. If it really moved, rebuild there and update listings. |
 | Service area or hidden address change | Usually little ranking effect; can prompt re-verification or suspension if a storefront hides an address customers visit, or a service-area business shows an address they can't. | The notice or verification request date. | Match the profile type to reality: storefront if customers visit, service-area if not. |
-| Hours changed | Fewer results at times the business now shows as closed. Calls drop at those times only. | Search at those hours from the business. | Correct hours. Special hours for holidays. |
+| Hours changed | Fewer results at times the business now shows as closed. Enquiries drop at those times only. | Search at those hours from the business. | Correct hours. Special hours for holidays. |
 | Website link changed or broken | Clicks drop, rankings may drift down over weeks. | Click the link on the profile: does it land on a live page that matches the money searches? | Link to the right live page (the location or main service page). |
 | Suspension, hard or soft | Hard: gone from Maps and name searches, often overnight. Soft: still visible, can't edit or edits don't go live. | The notice from Google. | See suspension.md. |
 | Verification request | The profile stops showing or editing pauses until verified. | Email or profile notice. | Complete it, with the evidence in suspension.md ready. |
@@ -77,8 +79,8 @@ Only name an update as a cause when its dates are confirmed from Google's own Se
 
 | Cause | Signature | Check | Fix |
 |---|---|---|---|
-| Reviews removed | Total count falls on a date; can come with a slope in rankings. | Count history; ask whether the removed reviews came from a burst, staff, family or an incentive. | Don't try to replace them in a burst. Start a steady request routine (SMS with a one-tap link within the hour the job ends, one email follow-up). |
-| Negative run | Rating falls over days; calls fall more than rankings (people still see you, but choose others). | Review dates and text. | Reply to each, calmly and specifically. Report fake, spam or competitor reviews through the profile, with evidence. |
+| Reviews removed | Total count falls on a date; can come with a slope in rankings. | Count history; ask whether the removed reviews came from a burst, staff, family or an incentive. | Don't try to replace them in a burst, because a burst is what gets reviews removed. Start a steady request routine: ask at the moment the customer has had the result, with a one-tap link, and one follow-up. `review-engine` builds it. |
+| Negative run | Rating falls over days; enquiries fall more than rankings (people still see you, but choose others). | Review dates and text. | Reply to each, calmly and specifically, within any rules on what the business may confirm. Report fake, spam or competitor reviews through the profile, with evidence. |
 | Stale reviews | Slope over months; competitors' reviews are newer. | Newest review date against competitors'. | A routine, not a campaign. |
 
 ---
@@ -97,7 +99,7 @@ Only name an update as a cause when its dates are confirmed from Google's own Se
 
 Google tends to show one of several similar businesses that sit at the same address or very close together in the same category, and hide the rest for that search. A filtered business often still shows for its name and reappears when the map is zoomed right in.
 
-Typical cases: two practices in the same building, a franchisee and head office, a practitioner listing and the clinic, an old listing for a previous business at the address, a duplicate.
+Typical cases: two businesses in the same category in one building, a franchisee and head office, an individual's own listing and the business they work at, an old listing for a previous business at the address, a duplicate.
 
 Check: search the money search from the business's own location; zoom in and out; see who shows instead. Look up every listing at the same address.
 

@@ -1,33 +1,34 @@
 # The wording
 
-Adapt each to the business: its name, the person's first name, the job. Keep the customer's first name and the sender's name in: a text from "Dan at Example Heating" gets tapped; one from a short code doesn't. No offers, no "if you were happy", no "5 stars".
+Starting points, not scripts. Adapt each to the business: its name, its voice, what the customer bought, and the moment the ask goes out. Keep the customer's first name and a real sender in, because a text from "{sender} at {business}" gets tapped and one from a short code doesn't. No offers, no "if you were happy", no "5 stars", because each of those turns a fair ask into a filtered or incentivised one.
 
-The prompt to mention the service and place is one light line. It helps the next customer, and review text naming the job and the area helps relevance. Never give them words to copy.
+The invitation to mention what was done and where is one light line. It helps the next customer and gives the review relevance. Never give customers words to copy.
 
-## SMS (within the hour)
+If there are rules on what the business can say (the lens in loop.md), the request mustn't name what the customer came for or anything about their case. Use the "nothing specific" variants below, and drop the "what we did" line. Let the customer decide what to say.
 
-**Trades**
-> Hi {first name}, it's {sender} from {business}. Thanks for having us today. If you've got a minute, a quick Google review really helps a small firm like ours: {link}. Saying what we did and which area you're in helps your neighbours find us.
+Placeholders: `{first name}`, `{sender}`, `{business}`, `{link}`, `{area}`, `{what they bought}` (the job, order, stay, visit, service, in the customer's words), `{moment}` (today, this week, your stay, your order).
 
-**Under 160 characters** (with a typical g.page link, and the business name set as the SMS sender. Check the count with the real link)
-> Hi {first name}, thanks for having us today. A Google review would really help: {link} Mention the job and your area if you can. {sender}
+## Text message
 
-**Clinics and healthcare** (no mention of the treatment or condition; let the patient decide what to say)
-> Thank you for visiting {business} today. If you'd like to share your experience, you can leave a Google review here: {link}. Thank you, the {business} team
+**Standard**
+> Hi {first name}, it's {sender} from {business}. Thanks for {moment}. If you've got a minute, a Google review really helps us: {link}. Saying what we did and roughly where you are helps people nearby find us.
 
-**Hospitality and retail**
-> Thanks for visiting {business} today, {first name}. If you've a moment, we'd love a Google review: {link}. It helps other people find us.
+**Short version** (check the count with the real link and sender name; long messages split and can cost more)
+> Hi {first name}, thanks for {moment}. A Google review would really help: {link} Mention what we did and your area if you can. {sender}
 
-**Professional services** (send when the matter or job is complete, not mid-way)
-> Hi {first name}, thank you for choosing {business}. If you're happy to, a short Google review would help others looking for {service} in {area}: {link}. Thank you, {sender}
+**Nothing specific** (for businesses with rules on what they can say)
+> Thank you for choosing {business}. If you'd like to share your experience, you can leave a Google review here: {link}. Thank you, the {business} team
 
-## Email follow-up (2 to 3 days later, once)
+**After a long piece of work** (send when it's complete, not mid-way)
+> Hi {first name}, thank you for choosing {business}. If you're happy to, a short Google review would help others looking for {what they bought} in {area}: {link}. Thank you, {sender}
+
+## Email follow-up (once)
 
 Subject: **A quick favour, {first name}?**
 
 > Hi {first name},
 >
-> Thanks again for choosing {business} {on day / for your job / for your visit}. If you haven't had a chance yet, we'd really appreciate a Google review. It takes about a minute:
+> Thanks again for choosing {business} for {what they bought}. If you haven't had a chance yet, we'd really appreciate a Google review. It takes about a minute:
 >
 > [Leave a review]({link})
 >
@@ -38,40 +39,38 @@ Subject: **A quick favour, {first name}?**
 >
 > *Don't want emails like this? Reply "stop" and we'll take you off.*
 
-The "if anything wasn't right" line goes to everyone and doesn't replace the review link. It offers a way to fix a problem; it doesn't filter who reviews.
+The "if anything wasn't right" line goes to everyone and sits alongside the review link, not in front of it. It offers a way to fix a problem; it doesn't filter who reviews. For the "nothing specific" variant, drop "for {what they bought}" and "what we did", and use "If you'd like to share your experience, it helps others choosing."
 
-Clinic version: drop "what we did" and use "If you'd like to share your experience, it helps others choosing a clinic."
+## QR card, receipt or invoice line
 
-## QR card or invoice line
+Card, at the counter or left with the customer:
 
-Card (A6 or business card), at the counter or left on site:
-
-> **Happy with today?** *(or, for clinics: **Thank you for visiting**)*
+> **Thanks for choosing {business}**
 > Leave us a Google review. Point your phone camera here.
 > [QR code]
 > It helps other people in {area} find us.
 
-Invoice or receipt footer:
+Receipt, invoice or packaging footer:
 
 > Thank you for choosing {business}. A Google review helps other people in {area} find us: {link} or scan the code.
 
-"Happy with today?" is a headline, not a filter: the card goes to everyone.
+The card goes to everyone. A headline like "Happy with today?" is fine as long as the card is handed to every customer, not only the ones who seem happy.
 
-## Staff script
+## Staff line
 
-For whoever is with the customer at the end. One line, then the card or the text. Practise it once in a team meeting.
+For whoever is with the customer at the end. One line, then the card or the text. Practise it once as a team.
 
 **When the customer says something positive:**
 > "Thank you, that's really good to hear. Would you mind putting that in a Google review? I'll text you the link now, it's one tap."
 
-**At handover, every time:**
+**At handover or payment, every time:**
 > "We'll send you a text with a link to leave a review. If you could mention what we did, that really helps us."
 
-**Clinics, at reception as the patient pays:**
-> "You'll get a text from us shortly with a link, if you'd like to leave a review. Thank you for coming in."
+**Nothing specific:**
+> "You'll get a text from us shortly with a link, if you'd like to leave a review. Thank you for coming to us."
 
-**Don'ts for staff:** don't ask only the customers who seem happy; don't hand them a tablet or phone to review on the spot (it's often filtered); don't suggest a star rating or words.
+**Don'ts for staff:** don't ask only the customers who seem happy; don't hand them a device to review on the spot; don't suggest a star rating or words.
 
-## Multi-location and agencies
+## Many locations and agencies
 
-Same wording across branches, with each branch's own link and the branch name. Agencies: the client's name and voice throughout, nothing about the agency.
+The same wording across branches, with each branch's own link and name. Agencies: the client's name and voice throughout, nothing about the agency.

@@ -2,40 +2,50 @@
 """Score candidate towns or areas for location pages: create, hold or don't create, with reasons.
 
 A location page earns its place only where the business can compete (close enough,
-real work there) and has something specific to say (jobs with photos, reviews naming
-the town, local facts, a team member or depot there). This script applies that rule
-the same way every time so the page plan is consistent.
+real work or customers there) and has something specific to say (real examples there,
+reviews naming the place, local facts, staff or premises there). This script applies
+that rule the same way every time so the page plan is consistent. It is the same for
+every kind of business; what changes is the input (see "Reading the lens" below).
 
 Input JSON:
   {
-    "business": {"name": "Example Heating", "lat": 53.841, "lng": -1.638,
-                 "max_travel_km": 20,          # how far you'll actually go for a job (default 30 if left out)
+    "business": {"name": "Example Business", "lat": 51.50, "lng": -0.12,
+                 "max_travel_km": 20,          # how far the business travels, or customers travel to it (default 30)
                  "strong_radius_km": 3,        # optional, from the audit's grid.py summary
-                 "jobs_target": 10},           # optional: jobs in the window that count as "plenty" (default 10)
+                 "jobs_target": 10,            # optional: count in the window that means "plenty" (default 10)
+                 "unit": "jobs"},              # optional: what is being counted, in the owner's words:
+                                               # jobs, customers, orders, bookings, clients (default "jobs")
     "towns": [
-      {"name": "Headingley",
-       "lat": 53.819, "lng": -1.580,           # or "distance_km": 4.2
+      {"name": "Northside",
+       "lat": 51.52, "lng": -0.10,             # or "distance_km": 4.2
        "is_base": false,                       # true for the town the business is based in
-       "jobs": 14,                             # jobs or customers there in the window you're using
+       "jobs": 14,                             # how many there in the window; "customers", "orders" or "bookings" also accepted
        "monthly_searches": 50,                 # optional; from a keyword tool, give the source
        "demand_source": "Keyword Planner range 10-100 (reported)",
        "competition": "medium",                # optional: low | medium | high
-       "content": {"jobs_with_photos": 6, "reviews_naming_town": 2,
-                   "local_facts": ["Victorian terraces, lots of combi swaps", "student lets: landlord certificates"],
-                   "team_or_depot": false},
-       "existing_page": "/areas/headingley/",  # optional, if the site already has one
+       "content": {"jobs_with_photos": 6,      # real examples there with photos; "examples" also accepted
+                   "reviews_naming_town": 2,
+                   "local_facts": ["fact that changes what customers there need", "travel or access detail"],
+                   "team_or_depot": false},    # staff or premises there; "staff_or_premises" also accepted
+       "existing_page": "/areas/northside/",   # optional, if the site already has one
        "page_leads": 0}                        # optional, enquiries that page brought in the window
     ]
   }
 
-Scoring (0 to 100): proximity 35, jobs 35, search demand 15, competition 15.
+Reading the lens:
+  Goes to customers: max_travel_km is how far the business goes for work; count work done in each place.
+  Customers come to it: max_travel_km is how far customers genuinely travel in; count customers from
+  each place (postcodes from bookings, orders or loyalty data). Expect few or no "create" results.
+
+Scoring (0 to 100): proximity 35, work there 35, search demand 15, competition 15.
 Demand and competition are left out and the rest re-weighted when not known.
-Local proof is counted separately, out of 4: 3+ jobs with photos, 2+ reviews naming
-the town, 2+ local facts, a team member or depot there.
+Local proof is counted separately, out of 4: 3+ examples with photos, 2+ reviews naming
+the place, 2+ local facts, staff or premises there. These thresholds, and the score
+cut-offs below, are Mani Bharij's working rule of thumb, not a published standard.
 
 Decisions:
   don't create  base town (the service pages already cover it), beyond max travel,
-                no jobs there, or score under 40
+                no work or customers there, or score under 40
   create        score 60+ and local proof 3+ of 4
   hold          everything else: worth a page once the missing proof is collected
 
@@ -68,14 +78,18 @@ def distance(biz, t):
     sys.exit(f"Town '{t.get('name')}': give distance_km, or lat and lng for the town and the business")
 
 
-def proof(t):
-    c = t.get("content") or {}
+def proof(t, unit="jobs"):  # unit: what the owner counts, used in the wording only
+    c = dict(t.get("content") or {})
+    if "jobs_with_photos" not in c and "examples" in c:
+        c["jobs_with_photos"] = c["examples"]
+    if "team_or_depot" not in c and "staff_or_premises" in c:
+        c["team_or_depot"] = c["staff_or_premises"]
     have, missing = [], []
     checks = [
-        (c.get("jobs_with_photos", 0) >= 3, f"{c.get('jobs_with_photos', 0)} jobs with photos", f"3+ jobs there with photos (have {c.get('jobs_with_photos', 0)})"),
+        (c.get("jobs_with_photos", 0) >= 3, f"{c.get('jobs_with_photos', 0)} real examples there", f"3+ real examples there ({unit} you can show, with photos or detail) (have {c.get('jobs_with_photos', 0)})"),
         (c.get("reviews_naming_town", 0) >= 2, f"{c.get('reviews_naming_town', 0)} reviews naming the town", f"2+ reviews that name the town (have {c.get('reviews_naming_town', 0)})"),
-        (len(c.get("local_facts") or []) >= 2, f"{len(c.get('local_facts') or [])} local facts", f"2+ facts specific to the place, such as housing stock, parking or local rules (have {len(c.get('local_facts') or [])})"),
-        (bool(c.get("team_or_depot")), "team member or depot there", "a team member or depot there (optional)"),
+        (len(c.get("local_facts") or []) >= 2, f"{len(c.get('local_facts') or [])} local facts", f"2+ facts specific to the place, such as travel time, access, local rules or what customers there typically need (have {len(c.get('local_facts') or [])})"),
+        (bool(c.get("team_or_depot")), "staff or premises there", "staff or premises there (optional)"),
     ]
     for ok, label, need in checks:
         (have if ok else missing).append(label if ok else need)
@@ -85,7 +99,9 @@ def proof(t):
 def score_town(biz, t):
     d = distance(biz, t)
     max_km = float(biz.get("max_travel_km") or 0) or None
-    jobs = t.get("jobs", t.get("customers")) or 0
+    jobs = next((t[k] for k in ("jobs", "customers", "orders", "bookings") if t.get(k) is not None), 0) or 0
+    unit = biz.get("unit") or "jobs"
+    one = unit[:-1] if unit.endswith("s") else unit
     target = biz.get("jobs_target") or 10
     parts, reasons = {}, []
 
@@ -98,17 +114,17 @@ def score_town(biz, t):
         parts["competition"] = COMPETITION[comp]
     total_w = sum(WEIGHTS[k] for k in parts)
     score = round(100 * sum(WEIGHTS[k] * v for k, v in parts.items()) / total_w)
-    n_proof, have, missing = proof(t)
+    n_proof, have, missing = proof(t, unit)
 
     # Reasons, in plain words
-    reasons.append(f"{d:.1f} km away" + (f" (you travel up to {max_km:g} km)" if max_km else ""))
+    reasons.append(f"{d:.1f} km away" + (f" (travel limit {max_km:g} km)" if max_km else ""))
     sr = biz.get("strong_radius_km")
     if sr is not None:
         if d <= sr:
             reasons.append(f"inside your strong radius ({sr:g} km): you can already win the map pack here")
         else:
             reasons.append(f"{d - sr:.1f} km beyond your strong radius: the page has to win in the organic results first")
-    reasons.append(f"{jobs} job{'s' if jobs != 1 else ''} there" if jobs else "no jobs there yet")
+    reasons.append(f"{jobs} {unit if jobs != 1 else one} there" if jobs else f"no {unit} there yet")
     if "demand" in parts:
         reasons.append(f"about {t['monthly_searches']} searches a month" + (f" ({t['demand_source']})" if t.get("demand_source") else ""))
     else:
@@ -122,13 +138,13 @@ def score_town(biz, t):
     if t.get("is_base"):
         decision, why = "don't create", "base town: the homepage and service pages already target it; a separate page would compete with them"
     elif max_km and d > max_km:
-        decision, why = "don't create", "outside where you travel for work"
+        decision, why = "don't create", "beyond how far you, or your customers, actually travel"
     elif not jobs:
-        decision, why = "don't create", "no work there to show, so the page could only swap the town name"
+        decision, why = "don't create", f"no {unit} there to show, so the page could only swap the town name"
     elif score >= 60 and n_proof >= 3:
-        decision, why = "create", "close enough to compete, real work there, and enough to say that no competitor could copy"
+        decision, why = "create", f"close enough to compete, real {unit} there, and enough to say that no competitor could copy"
     elif score < 40:
-        decision, why = "don't create", "too far or too little work there to compete; the service pages and profile cover it"
+        decision, why = "don't create", f"too far or too few {unit} there to compete; the service pages and profile cover it"
     else:
         decision = "hold"
         why = "worth a page once you have: " + "; ".join(m for m in missing if "optional" not in m) if score >= 60 \
@@ -170,7 +186,8 @@ def main():
     counts = {k: sum(1 for r in rows if r["decision"] == k) for k in order}
     dont = counts["don't create"]
     print(f"**{biz.get('name', 'Business')}**: {counts['create']} create, {counts['hold']} hold, {dont} don't create\n")
-    print("| Town | km | Jobs | Searches/mo | Competition | Local proof | Score | Decision | Site action |")
+    unit = (biz.get("unit") or "jobs").capitalize()
+    print(f"| Town | km | {unit} | Searches/mo | Competition | Local proof | Score | Decision | Site action |")
     print("|---|---|---|---|---|---|---|---|---|")
     for r in rows:
         print(f"| {r['name']} | {r['km']} | {r['jobs']} | {r['demand'] if r['demand'] is not None else 'unknown'} | "
@@ -180,7 +197,7 @@ def main():
         print(f"- **{r['name']}** ({r['decision']}): {r['why']}. {'; '.join(r['reasons'])}.")
     unknown = [r["name"] for r in rows if r["demand"] is None]
     if unknown and len(unknown) == len(rows):
-        print("\nNo search demand supplied, so scores rest on distance, jobs and proof. That is usually enough for a small service area.")
+        print("\nNo search demand supplied, so scores rest on distance, where the work is and proof. That is usually enough for a small area.")
 
 
 if __name__ == "__main__":

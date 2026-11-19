@@ -4,10 +4,10 @@ LocalBusiness schema tells search engines and AI systems which business the page
 
 ## Rules
 
-- Use the most specific subtype that fits: `Plumber`, `HVACBusiness`, `Electrician`, `RoofingContractor`, `Dentist`, `MedicalClinic`, `LegalService`, `AccountingService`. Otherwise `LocalBusiness`.
+- Use the most specific schema.org subtype of `LocalBusiness` that genuinely fits the profile's primary category (browse the subtypes at schema.org/LocalBusiness). If none fits, use `LocalBusiness`. A more specific type helps machines classify the business; a wrong one contradicts the profile.
 - One LocalBusiness block per real location, with the same `@id` on every page that refers to it (for example `https://example.co.uk/#business`). Location pages for areas served don't get their own LocalBusiness; they reference the main one and describe the area in `areaServed`.
 - `name`: exactly the profile name. Not the domain, not a tagline.
-- `address`: exactly as on the profile. Service-area business with a hidden address: leave `streetAddress` out and keep `addressLocality`, `addressRegion` and `postalCode` only if you're comfortable showing them; otherwise use `areaServed` alone.
+- `address`: exactly as on the profile. A business that goes to customers and hides its address on the profile: leave `streetAddress` out and keep `addressLocality`, `addressRegion` and `postalCode` only if you're comfortable showing them; otherwise use `areaServed` alone.
 - `telephone`: the main number, as on the profile. If call tracking puts a different number on the website, the schema still carries the main number, so the business stays consistent across the web.
 - `openingHoursSpecification`: same as the profile.
 - `aggregateRating`: don't add it for the business's own reviews on its own site. Google doesn't show self-serving review stars for LocalBusiness, and invented or copied ratings are a risk.
@@ -19,12 +19,12 @@ LocalBusiness schema tells search engines and AI systems which business the page
 ```json
 {
   "@context": "https://schema.org",
-  "@type": "Plumber",
+  "@type": "<most specific LocalBusiness subtype>",
   "@id": "https://example.co.uk/#business",
   "name": "<exact profile name>",
   "url": "https://example.co.uk/",
   "telephone": "<main number as on profile>",
-  "image": "https://example.co.uk/images/van.jpg",
+  "image": "https://example.co.uk/images/<real photo of the business>.jpg",
   "priceRange": "££",
   "address": {
     "@type": "PostalAddress",
@@ -47,8 +47,8 @@ LocalBusiness schema tells search engines and AI systems which business the page
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Boiler installation",
-  "serviceType": "Boiler installation",
+  "name": "<service name, as on the page>",
+  "serviceType": "<service name>",
   "provider": {"@id": "https://example.co.uk/#business"},
   "areaServed": [{"@type": "Place", "name": "<area>"}],
   "offers": {"@type": "Offer", "priceCurrency": "GBP", "price": "<from price, only if published on the page>"}

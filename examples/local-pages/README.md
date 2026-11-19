@@ -9,7 +9,7 @@ S=../../plugins/local-seo/skills/local-pages/scripts
 python $S/town_score.py towns.json > town-scores.md
 ```
 
-- `local-seo-brief.md`: the brief the intake produces.
+- `local-seo-brief.md`: the brief written while orienting (from the owner's answers to the few questions the site couldn't answer).
 - `proof.md`: what the owner supplied (prices, credentials, reviews he can quote, jobs with photos, local facts).
 - `towns.json`: candidate towns with job counts and proof, the script's input.
 - `town-scores.md`: the script's output.

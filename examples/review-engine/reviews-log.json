@@ -20,6 +20,12 @@
     "Fletcher Moss",
     "Manchester"
   ],
+  "avoid_in_replies": [
+    "as a patient",
+    "our patient",
+    "your physio",
+    "re:your (back|neck|hip|ankle) "
+  ],
   "reviews": [
     {
       "date": "2026-11-04",

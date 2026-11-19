@@ -12,11 +12,11 @@ It finds timing, not cause. An event in the window is a lead to check, not proof
 
 Input JSON:
   {
-    "business": "Example Heating (fictional)",
+    "business": "Example Business (fictional)",
     "series": [
       {"name": "Profile calls", "surface": "profile", "higher_is_better": true,
        "points": [["2026-06-01", 41], ["2026-06-08", 38], ...]},
-      {"name": "Avg grid rank: plumber", "surface": "maps", "higher_is_better": false,
+      {"name": "Avg grid rank: main service", "surface": "maps", "higher_is_better": false,
        "points": [{"date": "2026-06-01", "value": 2.4}, ...]}
     ],
     "events": [

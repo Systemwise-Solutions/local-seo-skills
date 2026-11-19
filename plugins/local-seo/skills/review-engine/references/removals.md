@@ -4,13 +4,13 @@ Google removes reviews that break its policies. It doesn't remove genuine bad re
 
 ## What usually qualifies
 
-Google's report options cover, among others: spam and fake reviews, conflicts of interest (a competitor, a former employee, the owner of a rival), off-topic reviews (about something else entirely), profanity, harassment, hate speech, and personal information. Check the current list in the report form itself; it changes.
+Google's report options have covered, among others: spam and fake reviews, conflicts of interest (a competitor, a former employee, the owner of a rival), off-topic reviews (about something else entirely), profanity, harassment, hate speech, and personal information. Check the current list in the report form itself; it changes.
 
 Signs a review is fake or from a competitor:
-- No record of the person as a customer, at the date given (check the booking system; for clinics, check privately and never say so in public).
+- No record of the person as a customer at the date given (check the booking, order or job system privately; where the relationship is confidential, never say so in public).
 - The reviewer's profile: other reviews only for competitors (five stars for them, one for you), many reviews left in one day across different towns, or a new profile with one review.
 - Several one-star reviews in a few days with no detail, especially after a dispute or a competitor's launch.
-- Details that don't match the business: a service you don't offer, a location you don't trade from.
+- Details that don't match the business: a service you don't offer, a location you don't operate from.
 - A former employee identifiable from the profile or the content.
 
 ## Collect the evidence first
@@ -19,7 +19,7 @@ Before reporting, keep a record for each review:
 - Screenshot of the review with the date, and the reviewer's public profile and its other reviews.
 - The review link (share the review from Maps to get it).
 - Why it breaks policy, in one line, using the policy's own category.
-- Your evidence, internal only: no matching customer in the system for that name and period; the dispute or the competitor link. Don't share customer records with Google beyond what's needed, and for clinics never share patient information.
+- Your evidence, internal only: no matching customer in the system for that name and period; the dispute or the competitor link. Don't share customer records with Google beyond what's needed, and never share anything covered by a confidentiality rule.
 
 ## Report
 
@@ -42,4 +42,4 @@ If someone threatens bad reviews unless paid, or a flood of one-star reviews arr
 
 A genuine customer with a genuine complaint, written fairly, stays. Spending weeks trying to remove it costs more than the review does. Reply well, fix the cause, and let the steady flow of new reviews push it down the list.
 
-A false and damaging review can be a legal matter. That's a decision for the business with a solicitor, not something to threaten in a reply.
+A false and damaging review can be a legal matter. That's a decision for the business with its lawyer, not something to threaten in a reply.

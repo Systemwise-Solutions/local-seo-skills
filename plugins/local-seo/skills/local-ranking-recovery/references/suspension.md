@@ -19,11 +19,11 @@ Google's wording changes, so record exactly what the notice and email say. In pr
 
 ## Find the likely cause
 
-Google rarely says which rule it applied. Check each, in this order, against the signage, the registration and what the business actually does:
+Google rarely says which rule it applied. Check each, in this order, against the signage, the registration and what the business actually does. The order runs from the commonest causes to the rarest, so most cases are found in the first two rows. Which rows matter most follows the lens in loop.md: address rows for a business customers visit, service-area rows for one that goes to them, ownership rows where an agency or several managers have had access.
 
 | Check | Cause when | Fix before appealing |
 |---|---|---|
-| **Name** | Contains keywords, locations or taglines not on the signage and registration ("Smith Plumbing - Emergency Plumber Leeds"). Often added by a previous agency, sometimes years ago. | Change it to the real name exactly as on the signage. |
+| **Name** | Contains keywords, locations or taglines not on the signage and registration ("Northgate & Co - Best <service> <town>"). Often added by a previous agency, sometimes years ago. | Change it to the real name exactly as on the signage. |
 | **Address** | A virtual office, a co-working desk nobody staffs, a PO box, a mailbox service, a home address shown to customers who never visit. | A storefront needs an address customers visit, staffed in the hours shown. A business that goes to its customers should be a service-area profile with the address hidden. If there's no real address at all, say plainly that reinstatement isn't realistic. |
 | **Service area** | A service-area business showing an address customers can't visit, or a service area far beyond where it works. | Hide the address; set the area it really covers. |
 | **Category** | A category the business doesn't serve, or one that doesn't match the website and listings. | Categories it actually serves only. |
@@ -38,19 +38,19 @@ Fix it everywhere: the profile, the website (name, address, phone in the footer 
 
 Get it all together before starting the request. Third-party reports say the upload step can be time-limited; check Google's current page for the rules. Everything must show the same name and address as the corrected profile.
 
-- **Business registration** in the name on the profile (for the UK, Companies House or a sole-trader record).
+- **Business registration** in the name on the profile (in the UK, Companies House, or proof of self-employment for a business run by one person).
 - **Proof of address**: a utility bill, lease or business bank statement in the business name at that address.
 - **Photos of permanent signage**, the entrance with a street number or landmark, and the inside of the premises in use. Not a temporary banner.
 - **Website** with the same name, address and phone.
 - **A branded email** on the website's domain, if they have one.
-- **Trade licences or professional registrations** where the sector has them.
-- **Readiness for video verification**: someone who can walk from the street, past the signage, into the premises, and show the tools of the trade, in one continuous take.
+- **Licences or professional registrations**, where the business's field requires them. The lens question on rules points at which apply.
+- **Readiness for video verification**: someone who can walk from the street, past the signage, into the premises, and show the equipment, stock or work that proves the business operates there, in one continuous take. For a business that goes to its customers, the vehicle, equipment and proof of management (keys, business documents) stand in for premises.
 
 ## File the request
 
 Send the user to Google's own help page for suspended profiles, [Fix suspended or disabled profiles](https://support.google.com/business/answer/4569145), and tell them to follow the steps it gives. Don't hard-code a form URL: Google changes the process. Write the short explanation for them, ready to paste, in this shape:
 
-> We are <name as on signage>, at <address>, trading since <year>. Our profile name had been changed to include extra keywords by a previous agency. We have corrected it to our registered and signed name, removed a duplicate profile created in error, and attached our registration, a utility bill for the address and photos of our signage and premises.
+> We are <name as on signage>, at <address>, operating under this name since <year>. Our profile name had been changed to include extra keywords by a previous agency. We have corrected it to our registered and signed name, removed a duplicate profile created in error, and attached our registration, a utility bill for the address and photos of our signage and premises.
 
 Keep it factual and short. No arguing, no blaming Google.
 
@@ -68,4 +68,4 @@ If the request is rejected, re-check the cause list. A rejection usually means t
 
 ## Not reinstatable
 
-If the address is one the business doesn't trade from, or there's no real business behind the listing, say so plainly. The options are a real address the business staffs, or a service-area profile where that fits.
+If the address is one the business doesn't work from, or there's no real business behind the listing, say so plainly. The options are a real address the business staffs, or a service-area profile where that fits.

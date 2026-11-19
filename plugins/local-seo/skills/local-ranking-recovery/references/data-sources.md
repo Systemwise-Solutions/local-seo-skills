@@ -6,7 +6,7 @@ Recovery needs history: the same numbers from before and after the drop. Work ou
 
 - **What the user exports or screenshots**: Business Profile performance (calls, website clicks, direction requests by week or month), Search Console performance by date and by page, call tracking reports, the suspension email, old grid scans from any tool.
 - **Web search and fetching pages**: the profile as it shows now, the website and its key pages, the Wayback Machine (web.archive.org) for what pages said before the change, competitors' profiles, Google's Search Status Dashboard and announcements for update dates.
-- **Manual checks on a phone**: search the money searches and the business name from the business's own location and about a mile away in each direction; zoom the map in and out to check for filtering.
+- **Manual checks on a phone**: search the money searches and the business name from the business's own location and a short distance away in each direction (further for a business customers travel far to, or that travels to them; the lens sets the distance); zoom the map in and out to check for filtering.
 
 Free data rarely has a clean "before" for rankings. Say so: the before comes from performance exports and Search Console, the after from today's checks.
 

@@ -47,14 +47,18 @@ To use a skill on its own, copy its folder from `plugins/local-seo/skills/` into
 
 Copy `plugins/local-seo/skills/` into your project and add a line to `AGENTS.md` (or your agent's rules file): "For local SEO tasks, follow the skills in that folder."
 
-## How the audit works
+## How the skills work
 
-1. **Intake.** Who the audit is for, how many locations, the sector, what's going wrong, and the searches that make money. Claude writes a short brief (`local-seo-brief.md`) and reuses it next time.
-2. **Data check.** It tells you what it can measure with what you have, and what it will ask you to check on your phone.
-3. **Six areas.** Where you rank, Business Profile, website, reviews, consistency across the web, AI answers.
-4. **Diagnosis.** The Visibility Ladder: eligible, understood, ranked, chosen, named. The plan starts at the lowest broken rung.
-5. **Prioritise.** A script ranks the fixes and splits them across three months.
-6. **Report.** Three things to do first, the findings by month, what not to waste time on, and how to measure progress.
+Every skill runs the same loop, written once in [`shared/loop.md`](shared/loop.md):
+
+1. **Orient.** Start from what your AI already knows: your website, your project, the brief, the log, the tools you've connected. It asks only for what's missing.
+2. **Measure.** Get the evidence the next decision needs, against the businesses actually winning your searches.
+3. **Diagnose.** Find the lowest broken thing. In the audit that's the Visibility Ladder: eligible, understood, ranked, chosen, named.
+4. **Act.** The smallest change with the biggest effect, written out ready to use.
+5. **Verify.** Re-measure the same way, or set when to.
+6. **Record.** Update `local-seo-brief.md` and `local-seo-log.md`, so the next run, or the next skill, starts from here.
+
+Nothing is written for one sector. Each skill reads the shape of the business (do customers come to you or do you go to them, how far they travel, how a customer becomes revenue, any rules on what you can say, one location or many) and lets that decide what matters. Rules come with their reasons, so the AI can handle cases nobody wrote down.
 
 ## Data, from free to paid
 

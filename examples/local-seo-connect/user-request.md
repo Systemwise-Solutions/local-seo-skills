@@ -2,12 +2,23 @@
 
 > I've got Claude Code and the Claude desktop app (Pro). I run Example Heating in Leeds, boiler repairs and installs. Calls have dropped since the summer and I think we've slipped in Maps in north Leeds. I want Claude to actually see the numbers. What do I need to connect?
 
-## Answers to the skill's questions
+## What the skill found without asking
 
-- Business: Example Heating, example-heating.co.uk (fictional). Profile name on Maps: "Example Heating".
-- For: my own business, 1 location (LS7, travels about 8 miles).
-- Goal: b. more calls, and a. rank higher in Maps.
-- Where: c. Claude Code mostly, b. desktop app sometimes. Plan: Pro.
-- Pay for: DataForSEO (topped up last year for a one-off report). Tried Local Falcon's free credits in the spring. Nothing else.
-- Google: owner on the Business Profile; Search Console verified (a friend set up something for it on my old laptop project); GA4 is on the site, not sure about key events.
-- Money searches: boiler repair leeds, boiler installation, emergency plumber.
+- Goal: more calls, and whether Maps rankings slipped (from the request).
+- Environment: Claude Code (a shell and config files are present); desktop app on Pro (from the request).
+- Configured tools: DataForSEO, Local Falcon and a Search Console server (from `check_env.py`, see `check_env-output.md`).
+- GA4 is on the site: example-heating.co.uk loads a GA4 tag. A Search Console verification meta tag is present too.
+- Shape: goes to customers from LS7, phone calls and quote requests are the revenue route (site has a click-to-call header and a quote form, no booking widget).
+- No `local-seo-brief.md` or `local-seo-log.md` in the folder.
+
+## What it asked, in one message
+
+1. Do you still use Local Falcon, or was that a trial? Do you pay for anything else for SEO?
+2. Are you an owner or manager on the Business Profile?
+3. Roughly how far do you travel for jobs?
+
+## The user's answers
+
+- Local Falcon: free credits in the spring, not since. DataForSEO topped up last year for a one-off report. Nothing else.
+- Owner on the Business Profile. A friend set up "something for Search Console" on an old laptop project.
+- About 8 miles. Money searches, if useful: boiler repair leeds, boiler installation, emergency boiler repair.

@@ -72,5 +72,13 @@ Owner: practice owner. Effort: medium.
 - Recovered means: calls back near 40 a week and "emergency dentist" coverage back above 60%. Google's decision time varies from days to weeks, and rankings can take a little longer to settle after that. No timeframe is guaranteed.
 - To stop it happening again: one owner for the profile, a change log, and no edits to name, address or category without a reason.
 
+- If the request is rejected: the next hypothesis is ownership. Check whether the old agency's account manages other suspended profiles before anything else is filed.
+
+## Log lines added
+```
+2026-11-19 | Suspended 10 Sep; tracking calls 40/week to 3, "emergency dentist" top 3 68% to 0% | Cause: keyword-stuffed name added 10 Mar by previous agency (high); hours edit 8 Sep likely prompted the review | Re-check: n/a
+2026-11-19 | Planned in order: remove duplicate "Larchmont Dental", restore name to "Larchmont Dental Studio", remove old agency access, fix name on site and directories, then one reinstatement request | Re-check: profile visible for name search weekly after request
+```
+
 ## Next steps
-If you'd rather have it done with you: localseoconsultant.net/consulting/local-seo-audit/
+If you'd rather have it done with you: localseoconsultant.net/consulting/google-business-profile-suspension/

@@ -108,5 +108,9 @@ Email to the Bristol guide:
 - Count a change only when it's more than one run per prompt and shows on more than one prompt.
 - Watch Doctify's share: it should start naming you in more of the runs that cite it once the listing is fixed.
 
+## Log lines added
+- 2026-11-19: AI visibility baseline, 30 runs, 3 prompts (prompt-set.md). Named: ChatGPT 2/9, Gemini 6/9, Perplexity 1/9, AI Overviews 2/3. Avonside Physio named in every run. Re-run the same set 2026-12-17.
+- 2026-11-19: Doctify listing shows the old Hotwells address. Correct this month; re-check the listing 2026-12-01.
+
 ## Next steps
 If you'd rather have it done with you: localseoconsultant.net/consulting/ai-search-visibility/

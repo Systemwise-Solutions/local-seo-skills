@@ -1,10 +1,12 @@
 # Goals to data
 
-Start from the question the user is trying to answer, not from the tool list. Each goal says what data answers it, the free way to get it, and which tools supply it properly. Recommend the "must" rows first; "useful" rows only if they already have the tool or the goal really needs it.
+Start from the question the user is trying to answer, not from the tool list, because a tool that doesn't answer it is cost and setup for nothing. Each goal says what data answers it, the free way to get it, and which tools supply it properly. Recommend the "must" rows first; "useful" rows only if they already have the tool or the goal really needs it.
 
 ## Contents
 - The data types
 - Goal by goal
+- Let the lens adjust it
+- Several locations or an agency
 - Picking between tools that overlap
 
 ---
@@ -60,9 +62,21 @@ Start from the question the user is trying to answer, not from the tool list. Ea
 ### Just see where I stand
 - Free tier plus whatever they already pay for. Run `local-seo-audit`. Connect tools after the audit shows which question matters.
 
+## Let the lens adjust it
+
+The goals above are the common shapes. Read the business through the lens in loop.md and adjust, because the data that proves "working" depends on how this business makes money:
+
+- **Customers come to the business**: direction requests and walk-ins matter more than calls; the grid is centred on the door and can be smaller.
+- **The business goes to customers**: the grid covers the area served, which costs more per scan; calls, forms and quote requests are the leads to track.
+- **Revenue comes through a booking system or checkout**: the booking or order event in GA4 (or the booking system's own export) matters more than calls.
+- **Revenue is mostly walk-in with no booking**: profile performance (directions, calls) is the nearest signal; GA4 adds little. Don't push a GA4 setup that won't answer the question.
+- **Rules on what it can say**: no effect on which tools to connect, but keep write tools (posts, replies) off until someone who knows the rules approves drafts.
+
+If the business doesn't fit any goal cleanly, ask what decision the data should help them make, and work back from that.
+
 ## Several locations or an agency
 
-- Grids per location get expensive by hand. A platform with an MCP is the realistic route past about 5 locations.
+- Grids per location get expensive and slow by hand. Mani's working rule of thumb: past about 5 locations, a platform with an MCP is the realistic route.
 - Business Profile performance across many profiles: a platform that reads it in bulk saves hours.
 - Agencies: one account across clients where the vendor allows it; the client owns their Google properties and adds the agency as a user.
 

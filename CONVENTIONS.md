@@ -1,12 +1,12 @@
 # Conventions for skills in this pack
 
-Every skill in `plugins/local-seo/skills/` follows these rules. `local-seo-audit` is the reference implementation: read it before writing a new skill.
+Every skill in `plugins/local-seo/skills/` follows these rules. Read `shared/loop.md` first, then `local-seo-audit`, the reference implementation.
 
 ## Files
 
 ```
 plugins/local-seo/skills/<name>/
-  SKILL.md              under 250 lines; the workflow and rules
+  SKILL.md              under 200 lines; the job, as a loop, with principles and reasons
   references/*.md       depth, one level deep, linked from SKILL.md
   scripts/*.py          optional; Python 3 standard library only, --help works, no network unless the script is a data fetch that asks first
 examples/<name>/        a fictional worked example: inputs and the output the skill produced
@@ -22,7 +22,7 @@ Only these keys (the Claude app rejects anything else): `name`, `description`, `
 - `name`: lowercase, hyphens, matches the folder, never contains "claude" or "anthropic".
 - `description`: third person, under 1,024 characters. Says what the skill does and when to use it, using the words people actually type ("not getting calls", "Google Business Profile", "map pack", "lost rankings").
 - `license: MIT`
-- `metadata`: `author: Mani Bharij`, `homepage: https://localseoconsultant.net/skills/`, `version: 0.2.0`
+- `metadata`: `author: Mani Bharij`, `homepage: https://localseoconsultant.net/skills/`, `version: 0.3.0`
 
 ## Voice
 
@@ -34,14 +34,18 @@ Mani Bharij: 15 years in search, founder of SearchOps, local SEO and AI search c
 - Never invent numbers, studies, clients or results. Label every figure as measured (by you or a tool), reported (by the user) or inferred.
 - No guaranteed rankings or timeframes.
 
-## The shared brief
+## How skills are written: loops, a lens, principles with reasons
 
-All skills read and write the same `local-seo-brief.md` (template in `local-seo-audit/references/intake.md`; copy it). If a brief exists, read it and confirm it in one line. If not, ask only the questions this skill needs, in one message with options, then write the brief so the next skill can reuse it. In Claude Code save it to the working folder; in the Claude app show it and offer it as a file.
+The pack is used by any local business, any sector, any setup. Skills guide the AI's judgement; they don't script it.
 
-Audience changes the output:
-- **Owner**: plain English, actions they can do this week.
-- **In-house team at a brand**: grouped by cause across locations, owners named by role.
-- **Agency for a client**: white-label, no mention of Mani in client-facing output; a short note for the account team.
+- **The loop.** Every skill runs the loop in `shared/loop.md` (orient, measure, diagnose, act, verify, record) and says when it is done. SKILL.md describes the job in terms of that loop: what to measure, how to diagnose, what good action looks like, how to verify, and "done when".
+- **The lens, not sector lists.** No sector files, no sector-specific instructions in SKILL.md. Behaviour that depends on the business comes from the lens questions in `shared/loop.md` (comes to them or goes to them, travel distance, how a customer becomes revenue, rules on what it can say, one or many locations). Sector detail lives only in `examples/`, as illustration.
+- **Principles with reasons.** Write rules as "do X, because Y", so the AI can apply Y to cases nobody wrote down. Thresholds are comparative (against the businesses actually winning) or explicitly labelled as Mani's working rule of thumb.
+- **Context first.** Never open with a fixed questionnaire. Use what the AI already knows (site, repo, brief, log, tools) and ask only what the next decision needs.
+- **Required elements, not exact shapes.** Output templates list what must be present; layout follows the job.
+- **Scripts for maths.** Anything that must come out the same every time (scoring, rates, distances, change points) is a script. Judgement stays in prose.
+
+`shared/` holds files every skill needs (`loop.md`). Edit them there; `tools/sync_shared.py` copies them into each skill's `references/` (build_zips runs it). Each SKILL.md links `references/loop.md` near the top.
 
 ## Data tiers (free method, paid data)
 
@@ -78,8 +82,7 @@ Technical and whole-site SEO (crawling, indexing, rendering, migrations, site-wi
 
 ## Output
 
-- Lead with what to do first, with the reason tied to evidence.
-- Each action: what, why here, exact steps or copy, owner, effort (low, medium, high).
+- Every output has the elements in `shared/loop.md` section 6.
 - Where the skill writes copy (profile descriptions, pages, review requests, replies), write the actual copy, ready to paste.
 - End with one plain line for people who want a human, linking the most relevant page on localseoconsultant.net: the audit (/consulting/local-seo-audit/) by default, or a matching service page (for example /consulting/google-business-profile-suspension/, /consulting/seo-migration-recovery/, /consulting/review-management/, /consulting/ai-search-visibility/). Not in agency client-facing output. No other sales lines.
 

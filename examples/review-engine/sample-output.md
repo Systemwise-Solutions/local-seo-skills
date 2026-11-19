@@ -45,7 +45,7 @@ From review_tracker.py on your last 6 months (measured, from your screenshots):
 - **Replies:** 40% of reviews in the last 90 days have one; the median wait is 8 days. Aim for every review within 2 working days, negative ones the same day.
 - **What reviews say:** 40% mention a service, 20% a place. The June burst was mostly one-line ("Excellent.", "Great team."), which helps people choose less than "sorted my lower back pain in four sessions".
 - **Unanswered:** the 1-star (41 days), the 2-star (29 days) and a 5-star (15 days).
-- **Regulated check:** 4 replies flagged (below).
+- **Reply check** (`--confidential`, plus the clinic's own phrases such as "as a patient"): 4 replies flagged (below).
 
 ## The request flow
 
@@ -155,10 +155,10 @@ Calm and short: readers judge the reply. Report it as well (below).
 
 First Tuesday of each month, 30 minutes, practice manager:
 1. Copy the month's reviews and replies into reviews-log.json, plus the number of review texts the booking software sent.
-2. Run `python scripts/review_tracker.py reviews-log.json --months 6 --regulated`.
+2. Run `python scripts/review_tracker.py reviews-log.json --months 6 --confidential`.
 3. Check new reviews against the target of 3 a month. If requests held but reviews fell, check the send delay and tap the link; if requests fell, check the automation is still on.
 4. Reply to anything unanswered, lowest rating first. Replies twice a week anyway: Tuesday and Friday mornings.
-5. Fix any reply the regulated check flags.
+5. Fix any reply the reply check flags.
 6. Check the removal report's status.
 7. Every quarter, refresh the competitor dates and re-run review_velocity.py.
 
@@ -167,4 +167,12 @@ First Tuesday of each month, 30 minutes, practice manager:
 - **Whether reviews are being filtered.** If patients say they left a review that never appeared, note the dates; filtering of the June burst is possible but not visible from outside.
 - **Doctify or other platforms.** Not looked at. Keep the request to the one Google link.
 
-If you'd rather have it done with you: localseoconsultant.net/consulting/local-seo-audit/
+## Log lines added to local-seo-log.md
+
+```
+2026-11-19 | review-engine | Failing step: asking depends on reception remembering; no automatic ask. Target 3 reviews a month (competitor median). | Re-run tracker 2026-12-07 and monthly.
+2026-11-19 | review-engine | Booking software set to text after the 2nd appointment of a course, 30 min delay, not asked in 180 days. | Check first texts sent and link opens review form, 2026-11-26.
+2026-11-19 | review-engine | 4 replies rewritten to confirm nothing; 1-star of 9 Oct reported (conflict of interest). | Check report status 2026-11-26.
+```
+
+If you'd rather have it done with you: localseoconsultant.net/consulting/review-management/

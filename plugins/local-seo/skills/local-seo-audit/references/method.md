@@ -14,7 +14,7 @@ A business has to clear five rungs, and each depends on the one below. Work on a
 | 4. Chosen | Do people pick it over the two businesses beside it? | Few recent reviews. No replies. Stock photos. Missing prices, hours or booking link. |
 | 5. Named | Do AI assistants recommend it? | Few other sources describe it. Inconsistent descriptions. Thin site content an assistant can't quote. |
 
-A clinic with the wrong primary category doesn't need a review campaign yet. The rungs overlap in practice. The model earns its place because it stops people fixing the interesting problem before the important one.
+A business with the wrong primary category doesn't need a review campaign yet. The rungs overlap in practice. The model earns its place because it stops people fixing the interesting problem before the important one.
 
 ## Proximity, Prominence, Proof
 
@@ -29,7 +29,7 @@ When a business ranks for its name but not its services, it is nearly always a p
 ## What the factors mean in practice
 
 - **Primary category** is the strongest relevance signal the owner controls. Check it first when they rank for their name but not their main service. Secondary categories help but never make up for the wrong primary.
-- **Landing page.** The page the profile links to should say plainly what the business does and where. A clinic linking to a homepage listing 40 treatments is weaker for each treatment than one linking to a page about that treatment. One page per core service, written for the person searching.
+- **Landing page.** The page the profile links to should say plainly what the business does and where. A business linking to a homepage that lists 40 services is weaker for each service than one linking to a page about that service. One page per core service, written for the person searching.
 - **Reviews.** Past a basic threshold, recency and a steady flow matter more than the total. Review text that mentions the service and the place helps relevance. Replies matter more for winning the click than for ranking. The quickest volume fix is timing: an SMS with a one-tap review link within the hour the job ends, one email follow-up two or three days later, and a QR code at the counter or on the invoice.
 - **Consistency.** Mismatched names, old addresses and different phone numbers create doubt for Google and for AI systems. Fixing them rarely causes a jump on its own, but leaving them broken caps everything else.
 - **Prominence beyond reviews.** Links from local sites, local press, sponsorships, suppliers and associations. Slow to build and hard to copy, which is why they hold.
@@ -56,4 +56,4 @@ A geo-grid is the same search run from a grid of points around the business.
 
 When the strong radius is smaller than the area customers come from, the fix is proof and prominence: the right primary category, services, a page for the service, review text that names the service and the surrounding areas, and local links. Service area settings won't widen it. If the business is out-proofed by an edge competitor, compare the two side by side and close the gaps in that order.
 
-A small strong radius in a dense city centre can be healthy. The same radius for a roofer covering a county is a problem. Judge it against how far customers travel.
+A small strong radius in a dense city centre can be healthy. The same radius for a business that travels across a county to its customers is a problem. Judge it against how far customers travel.

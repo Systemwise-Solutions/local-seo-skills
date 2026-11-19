@@ -7,7 +7,7 @@ The page plan works with no paid tools. Data sharpens two decisions: which searc
 - **Fetch the site**: the sitemap (`/sitemap.xml`), each service and location page, the page the profile links to. Compare location pages with each other: if most of the words are the same, they're town-swap pages.
 - **Competitors' pages**: the 3 businesses beating this one for its money searches. What pages they have, what proof is on them. Don't copy structure blindly; note what they prove that this business doesn't.
 - **Search results by hand**: search each money search plus town and note who ranks organically and in the map pack. A `site:` search shows whether pages are indexed.
-- **What the user pastes**: job counts by town, Business Profile search terms (Performance > Searches in the profile dashboard), Search Console exports.
+- **What the user pastes**: customer, job, order or booking counts by town or postcode, Business Profile search terms (Performance > Searches in the profile dashboard), Search Console exports.
 - **Demand**: Google Keyword Planner gives ranges with a free Ads account. Ranges are rough; say so. Many town-level searches show as "0 to 10" and still bring work; treat that as "unknown", not "none".
 
 ## SearchOps (if connected)
@@ -27,5 +27,5 @@ Local Falcon, BrightLocal or DataForSEO MCPs can supply grids and Maps results. 
 ## Rules
 
 - Label every figure: measured (by you or a tool), reported (by the user), inferred.
-- Never invent search volumes, prices or job counts. Unknown is a valid answer and the script handles it.
+- Never invent search volumes, prices or customer counts. Unknown is a valid answer and the script handles it.
 - Setup steps for tools change. Link the vendor's own docs rather than writing steps from memory.

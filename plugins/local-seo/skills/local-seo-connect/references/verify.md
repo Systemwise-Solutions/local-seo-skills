@@ -20,17 +20,15 @@ If a call fails: say what failed, try the fix in the vendor's troubleshooting on
 
 ## Recording it
 
-Replace the brief's **Data available** section with this shape. Keep "Tier" as the first line; other skills read it.
+Update the brief's **Data available** section. Layout is up to you, but keep a "Tier" line first, because other skills read it to decide how they measure. It must say:
 
-```markdown
-## Data available
-- Tier: <free | MCP: name, name | DataForSEO key>
-- Verified <date>:
-  - <tool>: <what it covers for this business> (<location, site or property name>)
-- Configured, not working: <tool: error in a few words>, or none
-- By hand or free: <Business Profile screenshots monthly, 5-point phone check, manual AI runs>
-- Not available: <what no connected tool covers, and how the skills will handle it>
-- Environment: <Claude app plan | Claude Code | Cursor | other>
-```
+- **Tier**: free, or the connected servers by name, or a DataForSEO key for scripts.
+- **Verified, with the date**: each tool, what it covers for this business, and which location, site or property it returned.
+- **Configured, not working**: each tool and the error in a few words, or none.
+- **By hand or free**: what the user will screenshot, export or check on their phone, and how often.
+- **Not available**: what no connection covers, and how the skills will handle it.
+- **Environment**: Claude app (and plan), Claude Code, Cursor or other, because the next skill's steps depend on it.
 
-Never record keys, tokens, account emails or URLs containing keys in the brief.
+Add one line per connection made, removed or failed to `local-seo-log.md` (mechanics in loop.md), with when to re-check anything left half-done.
+
+Never record keys, tokens, account emails or URLs containing keys in the brief or log, because both files get shared and committed.

@@ -9,6 +9,7 @@ Files:
 - `runs.txt`: the 30 runs the user pasted back (fictional), in the script's text format.
 - `mention-rate-output.md`: the real output of `mention_rate.py` on `runs.txt`.
 - `output.md`: the finished AI visibility write-up.
+- `local-seo-log.md`: the baseline and re-check lines the skill added.
 
 ```
 S=../../plugins/local-seo/skills/local-ai-visibility/scripts
