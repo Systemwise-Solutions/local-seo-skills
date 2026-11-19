@@ -6,8 +6,6 @@
 | DATAFORSEO_PASSWORD | DataForSEO | local-seo-audit grid.py and the DataForSEO MCP | yes |
 | DATAFORSEO_USERNAME | DataForSEO | DataForSEO MCP (local) | yes |
 | SEARCHOPS_API_KEY | SearchOps | a SearchOps key kept for a Bearer header (sign-in needs none) | no |
-| AHREFS_API_KEY | Ahrefs | Ahrefs API or MCP setups that read a key (name varies; see Ahrefs' docs) | no |
-| SEMRUSH_API_KEY | Semrush | Semrush API or MCP setups that read a key (name varies; see Semrush's docs) | no |
 | GOOGLE_APPLICATION_CREDENTIALS | Google | Google Analytics MCP and many Search Console MCPs | no |
 | GOOGLE_CLOUD_PROJECT | Google | Google Analytics MCP | no |
 

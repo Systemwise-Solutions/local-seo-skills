@@ -22,7 +22,7 @@ Tool names may carry a server prefix.
 
 ## Other tools
 
-The DataForSEO MCP can supply Maps results and keyword volumes; Ahrefs or Semrush, if connected, give keyword demand and which pages competitors rank with. Use whatever data tools are connected; don't push the user to buy anything mid-task. With the user's own DataForSEO key in Claude Code, keyword volumes cost per request: state the number of requests and get a yes first. Never ask for a key in chat.
+The DataForSEO MCP can supply Maps results and keyword volumes. For free demand data, use Search Console queries and Google Keyword Planner ranges; for which pages competitors rank with, search the money searches and read the results. Use whatever data tools are connected; don't push the user to buy anything mid-task. With the user's own DataForSEO key in Claude Code, keyword volumes cost per request: state the number of requests and get a yes first. Never ask for a key in chat.
 
 ## Rules
 

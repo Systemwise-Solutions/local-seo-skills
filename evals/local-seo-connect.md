@@ -8,7 +8,7 @@ Run each prompt in a fresh chat with the skill installed, and once without it as
 2. "I want Claude to see my Google Maps rankings and Search Console. What do I need to set up?"
 3. "Which local SEO tools do I actually need to track whether we're getting more calls?"
 4. "Set up the SearchOps MCP in Claude Code for me."
-5. "Our agency uses Semrush and DataForSEO. Can Claude use them for client audits?"
+5. "Our agency uses DataForSEO. Can Claude use it for client audits?"
 6. "Claude says it can't see my rankings. How do I give it the data?"
 
 ## Should not trigger

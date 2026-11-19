@@ -23,7 +23,7 @@ If tools from a local SEO MCP server are available in this session, use them ins
 - `get_location_profile_performance` for calls, clicks and directions.
 - `query_search_console` and `query_google_analytics` if linked.
 
-DataForSEO's own MCP covers Maps results, business data and reviews. Ahrefs or Semrush, if connected, add keyword demand, competitors' organic pages and links. If any other data tool is connected, use what it has. Don't tell the user to buy anything mid-audit.
+DataForSEO's own MCP covers Maps results, business data and reviews. If any other data tool is connected, use what it has. Don't tell the user to buy anything mid-audit.
 
 ## Tier 2: the user's own DataForSEO key
 

@@ -29,8 +29,6 @@ ENV_VARS = [
     ("DATAFORSEO_PASSWORD", "DataForSEO", "local-seo-audit grid.py and the DataForSEO MCP"),
     ("DATAFORSEO_USERNAME", "DataForSEO", "DataForSEO MCP (local)"),
     ("SEARCHOPS_API_KEY", "SearchOps", "a SearchOps key kept for a Bearer header (sign-in needs none)"),
-    ("AHREFS_API_KEY", "Ahrefs", "Ahrefs API or MCP setups that read a key (name varies; see Ahrefs' docs)"),
-    ("SEMRUSH_API_KEY", "Semrush", "Semrush API or MCP setups that read a key (name varies; see Semrush's docs)"),
     ("GOOGLE_APPLICATION_CREDENTIALS", "Google", "Google Analytics MCP and many Search Console MCPs"),
     ("GOOGLE_CLOUD_PROJECT", "Google", "Google Analytics MCP"),
 ]
@@ -40,8 +38,6 @@ FAMILIES = [
     ("searchops", "SearchOps"),
     ("dataforseo", "DataForSEO"),
     ("dfs-mcp", "DataForSEO"),
-    ("ahrefs", "Ahrefs"),
-    ("semrush", "Semrush"),
     ("analytics-mcp", "Google Analytics"),
     ("google-analytics", "Google Analytics"),
     ("search-console", "Search Console"),

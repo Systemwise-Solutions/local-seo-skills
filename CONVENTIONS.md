@@ -58,7 +58,6 @@ Every skill works with nothing but Claude, and gets sharper with tools. At the s
    - **Google Analytics**: official Google MCP (googleanalytics/google-analytics-mcp), read-only, needs a local Python setup.
    - **Google Business Profile**: the free performance dashboard in the profile, by screenshot or export. The Business Profile API needs Google's approval, so few users have it.
    - **DataForSEO MCP** (remote `mcp.dataforseo.com`, or `npx dataforseo-mcp-server`): Maps SERPs, business data, reviews, keywords. Pay as you go.
-   - **Ahrefs, Semrush** (optional; both publish official MCP servers): keyword demand, competitors, links. Take setup from their own docs on the day.
    - Any other data server the user has connected: use what its tools return, without naming or recommending it.
 3. **The user's own API key** for scripts in Claude Code, as environment variables: `DATAFORSEO_LOGIN` (or `DATAFORSEO_USERNAME`, which the DataForSEO MCP uses) and `DATAFORSEO_PASSWORD`. Never ask for a key in chat. Always state the number of paid requests and get a yes first.
 

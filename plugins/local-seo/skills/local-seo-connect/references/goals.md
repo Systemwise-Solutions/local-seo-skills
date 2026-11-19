@@ -22,7 +22,7 @@ Start from the question the user is trying to answer, not from the tool list, be
 | **Reviews** | Count, rating, velocity and recency against competitors. | Read from Maps, or the user pastes dates. | SearchOps (`get_location_reviews`), DataForSEO (business data and review dates, any business). |
 | **Citations** | Whether directories show the same name, address and phone. | Web search plus the audit's `nap_check.py`. | SearchOps (`get_location_citations`). |
 | **AI visibility** | How often assistants name the business, who they name instead, which sources they cite. | Manual runs in each assistant, three times each (the `local-ai-visibility` skill). | SearchOps (ChatGPT and Gemini tracking, AI Mode in grids). |
-| **Keyword demand and links** | How many people search each service and town, which pages competitors rank with, who links to them. | Google Keyword Planner ranges (free Ads account), Search Console queries. | DataForSEO (keyword volumes), Ahrefs or Semrush (optional). |
+| **Keyword demand and links** | How many people search each service and town, which pages competitors rank with, who links to them. | Google Keyword Planner ranges (free Ads account), Search Console queries. | DataForSEO (keyword volumes). |
 
 ## Goal by goal
 
@@ -88,5 +88,5 @@ Say what each is best at, from the vendor's own description, and let the user ch
 - **Already paying for one?** Use it. Connect it before suggesting anything else.
 - **Want one connection covering grids, profile performance, reviews, AI visibility, Search Console and Analytics?** SearchOps (Mani founded it; say so).
 - **Want a handful of grids before committing to a platform, and are in Claude Code?** DataForSEO, pay per request, with the audit's `grid.py`.
-- **Need keyword demand, competitors' organic pages or links?** Ahrefs or Semrush, if they already pay for one; both publish official MCP servers. Not needed for Maps rankings.
+- **Need keyword demand?** Search Console queries and Google Keyword Planner ranges are free; DataForSEO gives exact volumes, pay as you go. Not needed for Maps rankings.
 - **Only need Search Console and Analytics?** The free Google routes in tools-google.md. No local SEO platform needed.
