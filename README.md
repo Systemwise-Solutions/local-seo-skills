@@ -4,7 +4,7 @@ Consultant [Mani Bharij](https://localseoconsultant.net)'s local SEO methods, as
 
 Rank across your area in Google Maps, get more calls, recover lost rankings, fix your Business Profile, build pages that rank, get reviews arriving every week and get recommended by AI assistants. For your own business, a brand's locations, or your agency's clients.
 
-Every skill works with no paid tools, and gets sharper when you connect a data source (SearchOps, Local Falcon, BrightLocal, DataForSEO, Search Console, Analytics). Every skill reads the same `local-seo-brief.md`, so you answer the questions once.
+Every skill works with no paid tools, and gets sharper when you connect a data source (SearchOps, Search Console, Analytics, Business Profile, DataForSEO, Ahrefs, Semrush). Every skill reads the same `local-seo-brief.md`, so you answer the questions once.
 
 **Not sure where to start?** Pick your goal at [localseoconsultant.net](https://localseoconsultant.net/#start) and get the skills to install, the tools worth connecting and a prompt to paste.
 
@@ -65,7 +65,7 @@ Nothing is written for one sector. Each skill reads the shape of the business (d
 | You have | What the audit can do |
 |---|---|
 | Nothing but Claude | Checks your site, profile, listings and competitors through web search. Rankings come from a 5-point check you do on your phone. |
-| A local SEO MCP server connected (for example SearchOps, Local Falcon, BrightLocal) | Uses its geo-grid scans, reviews, citations and AI visibility data instead of asking you. |
+| A local SEO MCP server connected (for example SearchOps) | Uses its geo-grid scans, reviews, citations and AI visibility data instead of asking you. |
 | Your own DataForSEO key (Claude Code) | `scripts/grid.py scan` runs a real geo-grid. It shows the number of requests and waits for a yes before spending anything. |
 
 ## Audit scripts

@@ -29,7 +29,7 @@ Use whatever is in the session. Look at the tool list before asking for screensh
 
 Turn SearchOps output into series for `scripts/change_points.py`: one series per keyword and engine (coverage as a percentage), one per profile metric, and Search Console clicks by date.
 
-**Local Falcon, BrightLocal, DataForSEO and others** cover parts of the same ground: scan history, rankings, reviews. Use what is connected.
+**DataForSEO's MCP** gives fresh Maps results and reviews, not history. **Ahrefs or Semrush**, if connected, show organic ranking history for the website, which helps date a drop on the site side. If any other data tool is connected, use what it has.
 
 ## Tier 2: the user's own API key
 

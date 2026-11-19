@@ -23,9 +23,9 @@ Use whatever is connected before asking for screenshots.
 - `save_post_draft`: saves a post as a draft for a person to add a photo and publish. It strips phone numbers, emails and links from the text because Google rejects posts with them. Only when the user asks, after showing the text.
 - `get_location_week`, `list_tasks`, `create_task`: this week's numbers beside the work, and the change log as tasks with due dates (only with a yes; check `list_tasks` first).
 
-**Local Falcon** (official MCP) and **BrightLocal** cover competitor and ranking data; Local Falcon also has profile write tools with approval. Never make a live profile edit through a tool without the user approving that specific edit.
+**DataForSEO MCP** Google Maps results often return each business's primary and additional categories. That fills the secondary-category gap.
 
-**DataForSEO MCP** or **Google Maps results from any business-data tool** often return each business's primary and additional categories. That fills the secondary-category gap.
+**Other connected tools.** If another data server is in the session, use what its tools return. Never make a live profile edit through any tool without the user approving that specific edit.
 
 ## Tier 2: the user's own DataForSEO key
 

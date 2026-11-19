@@ -29,7 +29,7 @@ More calls; find out whether Maps rankings slipped in north Leeds
   - DataForSEO MCP: Google Maps results; grid.py ready (DATAFORSEO_LOGIN set)
   - Search Console (search-console-mcp, user scope): sc-domain:example-heating.co.uk
   - Google Analytics MCP: property "Example Heating", no key events yet
-- Configured, not working: none (Local Falcon removed by choice; old API key to revoke)
+- Configured, not working: none (old SearchOps entry removed; its API key to revoke)
 - By hand or free: Business Profile performance screenshots monthly
 - Not available: AI visibility tracking (manual runs if needed)
 - Environment: Claude Code, Claude desktop (Pro)

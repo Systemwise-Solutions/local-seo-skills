@@ -13,7 +13,7 @@ How a tool connects depends on where the user runs Claude. Checked against the l
 
 ## Remote servers and local servers
 
-- **Remote (a URL)**: the vendor hosts the server. You add its URL and sign in, or send a key in a header. Works in the Claude app, Claude Code and Cursor. SearchOps, Local Falcon, BrightLocal and DataForSEO all offer one.
+- **Remote (a URL)**: the vendor hosts the server. You add its URL and sign in, or send a key in a header. Works in the Claude app, Claude Code and Cursor. SearchOps and DataForSEO both offer one.
 - **Local (a command)**: the server runs on the user's computer, started with `npx`, `pipx` or similar. Works in Claude Code, Cursor and the Claude desktop app. Not in the Claude web app. Google's Analytics MCP and most Search Console MCPs are local.
 
 If the user only uses the Claude web app, recommend remote servers only.
@@ -22,7 +22,7 @@ If the user only uses the Claude web app, recommend remote servers only.
 
 Docs: https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp
 
-**Directory connectors.** Some vendors are listed in Claude's connector directory (Local Falcon lists itself there, per localfalcon.com/features/mcp). Add from the directory, sign in to the vendor, allow. Easiest route where it exists.
+**Directory connectors.** Some vendors are listed in Claude's connector directory; check it before adding a custom connector. Add from the directory, sign in to the vendor, allow. Easiest route where it exists.
 
 **Custom connectors** (a remote URL). As of November 2026, Claude's help page says:
 - Available on Free, Pro, Max, Team and Enterprise plans. **Free plans are limited to one custom connector.** So on Free, pick the one that answers their goal.
@@ -33,7 +33,7 @@ Docs: https://support.claude.com/en/articles/11175166-getting-started-with-custo
 
 Some vendor guides describe the menu as "Settings > Connectors". Claude's menus have been renamed before; follow Claude's help page for the path and the vendor's page for the URL.
 
-**Local servers in the desktop app.** The desktop app can run local servers from its config file or from a one-click extension bundle where a vendor ships one (Local Falcon publishes an `.mcpb` bundle on its GitHub releases). Docs: https://modelcontextprotocol.io/docs/develop/connect-local-servers. This needs the user to install the runtime (Node.js or Python) first. Only recommend it for Google Analytics or Search Console when they won't use Claude Code.
+**Local servers in the desktop app.** The desktop app can run local servers from its config file or from a one-click extension bundle (`.mcpb`) where a vendor ships one. Docs: https://modelcontextprotocol.io/docs/develop/connect-local-servers. This needs the user to install the runtime (Node.js or Python) first. Only recommend it for Google Analytics or Search Console when they won't use Claude Code.
 
 **After connecting:** start a new chat. Check the connector is switched on for that chat (the tools menu in the message box).
 
@@ -86,5 +86,5 @@ Other agents (VS Code, Windsurf, Gemini CLI, n8n and others): ask which one, fet
 - The user creates keys in the vendor's dashboard and types them into the command or config themselves. Never ask for one in chat. If one is pasted, tell them to revoke it and make a new one.
 - Prefer sign-in where offered: nothing to leak.
 - A key typed into a command lands in shell history. In bash or zsh they can set it as a variable first and reference it (`--header "Authorization: Bearer $VENDOR_KEY"`); in PowerShell, `$env:VENDOR_KEY`.
-- Some vendors put the key in the URL (Local Falcon and BrightLocal both document this). It works, but anyone who sees the config sees the key. Prefer their sign-in or header option.
+- Some vendors document putting the key in the URL. It works, but anyone who sees the config sees the key. Prefer their sign-in or header option.
 - Keep keys out of project-scoped files that go into git.

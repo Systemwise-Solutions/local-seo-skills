@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Report which local SEO data connections are already set up on this machine.
+"""Report which SEO data connections are already set up on this machine.
 
 Checks two things, and never prints a secret:
   1. Known environment variables: set or not set. Values are never printed.
@@ -28,7 +28,9 @@ ENV_VARS = [
     ("DATAFORSEO_LOGIN", "DataForSEO", "local-seo-audit grid.py"),
     ("DATAFORSEO_PASSWORD", "DataForSEO", "local-seo-audit grid.py and the DataForSEO MCP"),
     ("DATAFORSEO_USERNAME", "DataForSEO", "DataForSEO MCP (local)"),
-    ("LOCAL_FALCON_API_KEY", "Local Falcon", "Local Falcon MCP (local install)"),
+    ("SEARCHOPS_API_KEY", "SearchOps", "a SearchOps key kept for a Bearer header (sign-in needs none)"),
+    ("AHREFS_API_KEY", "Ahrefs", "Ahrefs API or MCP setups that read a key (name varies; see Ahrefs' docs)"),
+    ("SEMRUSH_API_KEY", "Semrush", "Semrush API or MCP setups that read a key (name varies; see Semrush's docs)"),
     ("GOOGLE_APPLICATION_CREDENTIALS", "Google", "Google Analytics MCP and many Search Console MCPs"),
     ("GOOGLE_CLOUD_PROJECT", "Google", "Google Analytics MCP"),
 ]
@@ -36,16 +38,17 @@ ENV_VARS = [
 # Substrings in a server's name, URL or command that identify a tool family.
 FAMILIES = [
     ("searchops", "SearchOps"),
-    ("localfalcon", "Local Falcon"),
-    ("local-falcon", "Local Falcon"),
-    ("brightlocal", "BrightLocal"),
     ("dataforseo", "DataForSEO"),
     ("dfs-mcp", "DataForSEO"),
+    ("ahrefs", "Ahrefs"),
+    ("semrush", "Semrush"),
     ("analytics-mcp", "Google Analytics"),
     ("google-analytics", "Google Analytics"),
     ("search-console", "Search Console"),
     ("searchconsole", "Search Console"),
     ("gsc", "Search Console"),
+    ("mybusiness", "Business Profile"),
+    ("business-profile", "Business Profile"),
 ]
 
 

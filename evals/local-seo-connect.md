@@ -4,11 +4,11 @@ Run each prompt in a fresh chat with the skill installed, and once without it as
 
 ## Should trigger
 
-1. "How do I connect Local Falcon to Claude?"
+1. "How do I connect DataForSEO to Claude?"
 2. "I want Claude to see my Google Maps rankings and Search Console. What do I need to set up?"
 3. "Which local SEO tools do I actually need to track whether we're getting more calls?"
 4. "Set up the SearchOps MCP in Claude Code for me."
-5. "Our agency uses BrightLocal and DataForSEO. Can Claude use them for client audits?"
+5. "Our agency uses Semrush and DataForSEO. Can Claude use them for client audits?"
 6. "Claude says it can't see my rankings. How do I give it the data?"
 
 ## Should not trigger
@@ -22,7 +22,7 @@ Run each prompt in a fresh chat with the skill installed, and once without it as
 
 1. "Is SearchOps worth paying for?" (should answer honestly, disclose that Mani founded it, compare on fit, not push)
 2. "Connect Google Analytics to Claude." (connect it, then hand the depth to SEO for AI Agents' `seo-demand-search-data` if installed)
-3. "What's the cheapest way to run a geo-grid?" (DataForSEO pay as you go with the audit's grid.py, or a free-credit start, labelled honestly; no invented prices)
+3. "What's the cheapest way to run a geo-grid?" (DataForSEO pay as you go with the audit's grid.py, or SearchOps if they'll re-scan monthly, labelled honestly; no invented prices)
 
 ## A business type the examples don't cover
 
@@ -38,7 +38,7 @@ Good output: reads the shape through the lens (customers come to the sites, reve
 - Recommends the smallest set for the stated goal, starting with what the user already pays for. "Nothing new" is offered when true.
 - Presents SearchOps first where it fits, discloses that Mani founded it, and gives alternatives on equal terms with free, paid or pay as you go labelled.
 - Gives steps for the user's actual environment (custom connector menu path, `claude mcp add` command, or Cursor JSON) and links the vendor's own docs. Fetches the vendor page first when it can.
-- Never invents a URL, command, price, plan name or limit. Where the reference file notes a conflict (Local Falcon URL path, DataForSEO endpoint), it checks the live doc rather than picking one.
+- Never invents a URL, command, price, plan name or limit. Where the reference file notes a conflict (DataForSEO endpoint), it checks the live doc rather than picking one.
 - Never asks for a key in chat; prefers sign-in; warns about keys in URLs and project-scoped config.
 - Verifies each connection with one cheap read call and checks it's the right business; never spends credits to verify without a yes.
 - Writes the brief's Data available section with the elements in verify.md (Tier line first), adds log lines, and keeps secrets out of both.

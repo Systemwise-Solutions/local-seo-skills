@@ -13,12 +13,12 @@
         "DATAFORSEO_PASSWORD": "FAKE-not-a-real-password"
       }
     },
-    "local-falcon-mcp": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "https://mcp.localfalcon.com/?local_falcon_api_key=FAKE_KEY_123"
-      ]
+    "searchops": {
+      "type": "http",
+      "url": "https://searchops.co/api/mcp",
+      "headers": {
+        "Authorization": "Bearer lp_live_FAKE_not_a_real_key"
+      }
     }
   },
   "projects": {

@@ -15,7 +15,7 @@ For anything beyond connecting (choosing the right property, reading and interpr
 ## Business Profile performance
 
 - **Free**: calls, website clicks, direction requests and the searches that showed the profile are in the profile's own performance view, for owners and managers.
-- **Into Claude**: no official Google MCP for Business Profile that this skill knows of. Routes: SearchOps reads it (`get_location_profile_performance`, `get_location_profile_search_terms`) once the profile is linked inside SearchOps; or the user screenshots or exports the performance view each month and shares it.
+- **Into Claude**: no official Google MCP for Business Profile that this skill knows of. Routes: SearchOps reads it (`get_location_profile_performance`, `get_location_profile_search_terms`) once the profile is linked inside SearchOps; or the user screenshots or exports the performance view each month and shares it. Google's Business Profile APIs need Google to approve access first, so a home-made connection isn't a quick route for most owners.
 - **Access check**: the user must be an owner or manager on the profile. If an agency or old web designer is the only owner, getting ownership back comes first.
 
 ## Google Analytics 4

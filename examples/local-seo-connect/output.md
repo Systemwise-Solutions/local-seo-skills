@@ -11,7 +11,7 @@ No brief or log in this folder, so I've written both. Your goal: more calls, and
 I ran `check_env.py` and looked at the tools in this session.
 
 - **DataForSEO** is set up in Claude Code for all projects, and its tools are in this session. Your API login and password are set as environment variables for the MCP (`DATAFORSEO_USERNAME`, `DATAFORSEO_PASSWORD`). The audit's grid script reads `DATAFORSEO_LOGIN` instead, which isn't set.
-- **Local Falcon** is set up, but with your API key inside the URL. Anyone who sees `~/.claude.json` sees the key. Its tools aren't in this session.
+- **SearchOps** is set up, with an API key typed into `~/.claude.json` as a header. Anyone who sees that file sees the key. Its tools aren't in this session, which fits you having stopped paying for it.
 - **Search Console**: a community server (`search-console-mcp`) is configured, but only for another project folder (`old-website-project`), so it isn't available here.
 - **Google Analytics** and **Business Profile performance**: nothing connected.
 
@@ -27,11 +27,11 @@ Your question is "why have calls dropped, and is it Maps?". That needs three thi
 
 Search Console is useful (did the website's own traffic drop?) and you nearly have it, so we'll finish that too.
 
-**Which grid source.** SearchOps is the platform Mani founded; it would cover grids, profile performance, Search Console and Analytics in one connection, and it's paid (MCP on its Pro plan and above; current prices on searchops.co/pricing). You don't need it to answer this question, because you already have:
-- **DataForSEO**, pay as you go. Cheapest for a handful of grids: a 5 by 5 grid is 25 requests per search. The audit's `grid.py` runs it and prints the cost.
-- **Local Falcon**, credit based, with whatever's left of your free credits. Easier if you'll re-scan monthly, because it stores the history for you.
+**Which grid source.** Two options, both already set up:
+- **SearchOps**, the platform Mani founded. It covers grids in Maps, Search and AI Mode, profile performance, Search Console and Analytics in one connection, and keeps the history so monthly re-scans need no work from you. It's paid, with the MCP on Pro and above; current prices on searchops.co/pricing. You stopped paying for it in the spring.
+- **DataForSEO**, pay as you go, already topped up. Cheapest for a handful of grids: a 5 by 5 grid is 25 requests per search. The audit's `grid.py` runs it and prints the cost.
 
-My pick: DataForSEO for the first audit, because it's already connected and paid for. Decide on monthly tracking after the audit shows what's wrong. If you want Local Falcon for that later, reconnect it with sign-in (3 under Connecting) rather than the key in the URL.
+My pick: DataForSEO for the first audit, because it's connected and paid for. Decide on monthly tracking after the audit shows what's wrong. If you go back to SearchOps for that, reconnect it with sign-in (3 under Connecting) rather than the key in the config.
 
 **Business Profile performance** has no Google MCP. Take a screenshot of the performance view for the last 6 months and paste it here. That's free and enough for one location.
 
@@ -52,12 +52,15 @@ claude mcp add --transport stdio --scope user --env GOOGLE_APPLICATION_CREDENTIA
 ```
 Use the credentials file your friend set up if it's still on this laptop; if not, its README has the steps to make a new one.
 
-**3. Local Falcon (optional, later).** Remove the key-in-URL version and add the remote server with sign-in. Local Falcon's README and its features page give slightly different URLs (`https://mcp.localfalcon.com` and `https://mcp.localfalcon.com/mcp`), so take the URL from https://github.com/local-falcon/mcp on the day:
+**3. SearchOps (now: remove; later, optional: sign in).** Remove the entry with the key in it today:
 ```bash
-claude mcp remove local-falcon-mcp
-claude mcp add --transport http --scope user local-falcon <URL from the README>
+claude mcp remove searchops
 ```
-Then `/mcp` and Authenticate. Revoke the old API key in Local Falcon afterwards, since it's been sitting in a config file.
+Then revoke that key in SearchOps under Developers > API & MCP Credentials, since it's been sitting in a config file. If you go back to it, add it back with sign-in, as its help page recommends (https://searchops.co/help/connect-the-mcp-server):
+```bash
+claude mcp add --transport http --scope user searchops https://searchops.co/api/mcp
+```
+Then `/mcp` and Authenticate. Search Console and Analytics are linked inside SearchOps, so once it's back, it can stand in for 2 and 4 below if you'd rather not run those servers.
 
 **4. Google Analytics.** Google's official server: https://github.com/googleanalytics/google-analytics-mcp. Free, read-only by default. It needs pipx, a Google Cloud project with the Analytics Admin and Data APIs switched on, and a sign-in with read-only scope; the README has the steps. Then:
 ```bash
@@ -78,7 +81,7 @@ Restart Claude Code after adding servers so the tools load.
 | `grid.py` | `--help`, and `DATAFORSEO_LOGIN` now reported as set | Ready; no grid run yet (25 requests per search, needs your yes) | Ready |
 | Search Console | `list_sites` | `sc-domain:example-heating.co.uk` listed, 28 days of rows returned | Verified |
 | Google Analytics | `get_account_summaries` | Property "Example Heating" listed; last 7 days, 212 sessions; no key events configured | Verified, gap found |
-| Local Falcon | Not reconnected | | Skipped, by choice |
+| SearchOps | Old entry removed; not reconnected | | Skipped, not subscribed |
 | Business Profile performance | Screenshot pasted, May to October | Calls down from 61 to 34 a month (reported) | By hand |
 
 One gap: GA4 has no key events, so website calls and form fills aren't counted. That's set-up work on the site. If SEO for AI Agents is installed, `seo-operations-measurement` sets it up; otherwise, in GA4 mark the phone-link click and form submission as key events, and the audit will use them from next month.
@@ -96,7 +99,7 @@ One gap: GA4 has no key events, so website calls and form fills aren't counted. 
 - 2026-11-19: Set DATAFORSEO_LOGIN for grid.py. No grid run yet; needs a yes on 25 requests per search.
 - 2026-11-19: Re-added Search Console at user scope; verified.
 - 2026-11-19: Connected Google Analytics MCP; no key events. Re-check 2026-12-19 that call and form events record.
-- 2026-11-19: Local Falcon left disconnected; revoke the old key this week.
+- 2026-11-19: Removed the old SearchOps entry; revoke its key this week.
 
 Next: run `local-seo-audit`. It will pick up the brief and start with a grid for "boiler repair leeds".
 

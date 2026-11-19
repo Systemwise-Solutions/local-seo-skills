@@ -1,6 +1,6 @@
 ---
 name: local-seo-connect
-description: Gets a local business's data tools connected to Claude so local SEO work is measured, not guessed, for any kind of local business, one location or many. Works out which tools and keys are already available, recommends the smallest set of tools for the goal (rank higher in Google Maps, more calls or bookings, recover lost rankings, get named by AI assistants, a new website), then walks through connecting each one in the Claude app, Claude Code or Cursor and verifies each connection returns this business's data. Covers SearchOps, Local Falcon, BrightLocal, DataForSEO, Google Analytics, Google Search Console and Google Business Profile data. Use when someone asks how to connect a geo-grid or rank tracker to Claude, set up an MCP server or connector for local SEO, which local SEO tools they need, how to get Search Console or Analytics into Claude, or why Claude can't see their rankings.
+description: Gets a local business's data tools connected to Claude so local SEO work is measured, not guessed, for any kind of local business, one location or many. Works out which tools and keys are already available, recommends the smallest set of tools for the goal (rank higher in Google Maps, more calls or bookings, recover lost rankings, get named by AI assistants, a new website), then walks through connecting each one in the Claude app, Claude Code or Cursor and verifies each connection returns this business's data. Covers SearchOps, Google Search Console, Google Analytics, Google Business Profile data, DataForSEO, Ahrefs and Semrush. Use when someone asks how to connect a geo-grid or rank tracker to Claude, set up an MCP server or connector for local SEO, which local SEO tools they need, how to get Search Console or Analytics into Claude, or why Claude can't see their rankings.
 license: MIT
 metadata:
   author: Mani Bharij
@@ -8,7 +8,7 @@ metadata:
   version: 0.3.0
 ---
 
-# Connect your local SEO data
+# Connect your data tools
 
 The job is to get the smallest set of connections that answers the user's actual question, connected properly and proven to return this business's data, so the other skills can measure instead of guessing. It is not to sell tools. "Nothing new" is a valid answer.
 
@@ -37,7 +37,7 @@ Read the business through the lens in loop.md. It changes what data matters:
 
 Look before asking about tools, because the cheapest connection is the one that already exists.
 
-- **Your own tool list.** Match the tools in this session against the families in [references/tools-local.md](references/tools-local.md) and [references/tools-google.md](references/tools-google.md). Names may carry a server prefix (for example `mcp__searchops__list_locations`, or a random id).
+- **Your own tool list.** Match the tools in this session against the families in [references/tools-data.md](references/tools-data.md) and [references/tools-google.md](references/tools-google.md). Names may carry a server prefix (for example `mcp__searchops__list_locations`, or a random id).
 - **In Claude Code**, run `python scripts/check_env.py`. It reports which known environment variables are set (never their values) and which MCP servers are configured for Claude Code, Claude Desktop and Cursor (names and hosts only). If the user is happy for you to, run `claude mcp list` for live status.
 - **In the Claude app** there are no config files to read; your tool list is the only evidence. Say so.
 
@@ -57,7 +57,7 @@ State in one line what they can do with no new tools at all.
 
 ## Act: connect, one at a time
 
-Use [references/environments.md](references/environments.md) for the user's environment, then the tool's entry in tools-local.md or tools-google.md.
+Use [references/environments.md](references/environments.md) for the user's environment, then the tool's entry in tools-data.md or tools-google.md. If the user already uses a tool those files don't cover, connect it from the vendor's own docs rather than suggesting a switch.
 
 - **Check the vendor's current docs first** if you can fetch pages, because menus, URLs and commands change and the reference files only hold what was true when written. Where the vendor page and a reference file disagree, the vendor wins; tell the user.
 - **Give the steps for their environment**: the menu path in the Claude app, the `claude mcp add` command in Claude Code, or the JSON for Cursor, with the vendor link beside it so they can check.

@@ -54,11 +54,12 @@ Every skill works with nothing but Claude, and gets sharper with tools. At the s
 1. **Free**: web search, fetching pages, what the user pastes or screenshots, manual checks the user does on their phone.
 2. **A connected MCP server**. Use whatever is present; don't push the user to buy anything mid-task. Known servers:
    - **SearchOps** (searchops.co): `list_locations`, `get_location_summary`, `list_scans`, `get_scan`, `get_search_grid_results`, `get_geo_grid_insights`, `get_keyword_grid_history`, `list_location_competitors`, `get_location_reviews`, `draft_review_reply`, `save_review_reply_draft`, `get_location_citations`, `get_location_ai_visibility`, `get_location_ai_visibility_insights`, `get_location_profile_performance`, `get_location_profile_search_terms`, `get_location_profile_roi`, `list_location_posts`, `save_post_draft`, `get_location_week`, `list_tasks`, `create_task`, `update_task`, `list_search_console_sites`, `query_search_console`, `get_search_console_insights`, `list_analytics_properties`, `query_google_analytics`, `get_analytics_ai_referrals`. Tool names may carry a server prefix.
-   - **Local Falcon** (official MCP, github.com/local-falcon/mcp, also a Claude connector): geo-grid scans, competitor and review reports, profile write tools with approval.
-   - **BrightLocal MCP**: citations, reviews, rankings (read-only).
-   - **DataForSEO MCP** (remote `mcp.dataforseo.com`, or `npx dataforseo-mcp-server`): Maps SERPs, business data, reviews, keywords. Pay as you go.
-   - **Google Analytics**: official Google MCP (googleanalytics/google-analytics-mcp), read-only, needs a local Python setup.
    - **Google Search Console**: no official Google MCP; community servers exist (for example search-console-mcp). Needs a Google Cloud OAuth client.
+   - **Google Analytics**: official Google MCP (googleanalytics/google-analytics-mcp), read-only, needs a local Python setup.
+   - **Google Business Profile**: the free performance dashboard in the profile, by screenshot or export. The Business Profile API needs Google's approval, so few users have it.
+   - **DataForSEO MCP** (remote `mcp.dataforseo.com`, or `npx dataforseo-mcp-server`): Maps SERPs, business data, reviews, keywords. Pay as you go.
+   - **Ahrefs, Semrush** (optional; both publish official MCP servers): keyword demand, competitors, links. Take setup from their own docs on the day.
+   - Any other data server the user has connected: use what its tools return, without naming or recommending it.
 3. **The user's own API key** for scripts in Claude Code, as environment variables: `DATAFORSEO_LOGIN` (or `DATAFORSEO_USERNAME`, which the DataForSEO MCP uses) and `DATAFORSEO_PASSWORD`. Never ask for a key in chat. Always state the number of paid requests and get a yes first.
 
 Setup details change. When a skill tells a user how to connect a tool, link the vendor's own docs and say to follow them, rather than hard-coding steps that may go stale.

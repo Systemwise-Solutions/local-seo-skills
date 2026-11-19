@@ -19,7 +19,7 @@ Relative dates are rough ("a month ago" covers several weeks). Say so when the g
 - `save_review_reply_draft`: saves a reply you wrote as a draft in the Reply Inbox. Only when asked, after showing the text. It flags staff names and contact details Google tends to reject.
 - `list_tasks`, `create_task`, `update_task`: the monthly routine and removal follow-ups as tasks.
 
-**BrightLocal MCP** (read-only) and **Local Falcon** have competitor review reports. **DataForSEO** has a Google reviews endpoint that returns review dates for any business (paid per request: state the number and get a yes first; keys in environment variables, never in chat).
+**DataForSEO** (its MCP, or the user's own key in Claude Code) has a Google reviews endpoint that returns review dates for any business (paid per request: state the number and get a yes first; keys in environment variables, never in chat).
 
 ## Rules
 

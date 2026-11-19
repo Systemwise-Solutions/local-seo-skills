@@ -8,9 +8,9 @@ A connection counts only when a read call returns this business's data. Configur
 |---|---|---|---|
 | SearchOps | `list_locations` (with `query` set to the business name) | The business is listed. For Maps goals, `list_scans` for that location shows at least one scan, or the user knows scans haven't been set up yet. | Empty list: wrong SearchOps account, or the location isn't added yet. |
 | SearchOps, Google data | `list_search_console_sites`, `list_analytics_properties` | The site or property for this business is there with `active: true` and linked to the location. | An error from `list_analytics_properties` means Analytics isn't connected in SearchOps. |
-| Local Falcon | A list or account read tool from its tool list | The business's location or saved reports appear. | Never a scan: scans spend credits. |
-| BrightLocal | A list-locations or account read tool | The business's location appears. | Needs Grow plan and Labs access; an access error usually means that. |
 | DataForSEO | One small request, after a yes | A result with data and a cost line. | Every data call is billed. Say how many requests before running. |
+| Ahrefs or Semrush | An account, project or usage read tool from its tool list | The business's domain or project appears, or the account answers. | Data calls can use API units or credits; check the vendor's docs and say so before running one. |
+| Any other connected server | Its cheapest list or account tool | The business appears. | Never a call that spends credits without a yes. |
 | Google Analytics MCP | `get_account_summaries` | The property for this website is listed. Then one `run_report` for the last 7 days shows sessions above zero. | Zero sessions: wrong property, or GA4 isn't on the site. |
 | Search Console MCP | Its list-sites tool | The site is listed and returns rows for the last 28 days. | A URL-prefix property for `http://` or without `www` can be empty while the real data sits in another property. |
 
