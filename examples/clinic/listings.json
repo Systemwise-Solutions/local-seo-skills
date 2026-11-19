@@ -1,0 +1,34 @@
+{
+  "reference": {
+    "source": "Google Business Profile",
+    "name": "Example Skin Clinic",
+    "address": "12 Acre Lane, London SW2 5SG",
+    "phone": "020 7946 0123"
+  },
+  "listings": [
+    {
+      "source": "Website footer",
+      "name": "Example Skin Clinic Ltd",
+      "address": "12 Acre Ln, London SW2 5SG",
+      "phone": "+44 20 7946 0123"
+    },
+    {
+      "source": "Yell",
+      "name": "Example Skin Clinic",
+      "address": "4 Coldharbour Lane, London SW9 8PR",
+      "phone": "020 7946 0999"
+    },
+    {
+      "source": "Treatwell",
+      "name": "Example Skin & Laser Clinic Brixton",
+      "address": "12 Acre Lane, London SW2 5SG",
+      "phone": "020 7946 0123"
+    },
+    {
+      "source": "Facebook",
+      "name": "Example Skin Clinic",
+      "address": "12 Acre Lane, SW2 5SG",
+      "phone": ""
+    }
+  ]
+}

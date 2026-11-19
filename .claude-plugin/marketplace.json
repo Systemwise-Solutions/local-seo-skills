@@ -1,0 +1,14 @@
+{
+  "name": "mani-bharij",
+  "owner": { "name": "Mani Bharij", "url": "https://localseoconsultant.net" },
+  "metadata": {
+    "description": "Local SEO skills from consultant Mani Bharij: audits, map pack rankings, Google Business Profile, reviews and AI search visibility."
+  },
+  "plugins": [
+    {
+      "name": "local-seo",
+      "source": "./plugins/local-seo",
+      "description": "A local SEO consultant's audit built into Claude: tailored intake, six-area audit, ranked fix list and 90-day plan."
+    }
+  ]
+}

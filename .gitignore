@@ -1,0 +1,7 @@
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+local-seo-brief.md
+findings.json
+grid.json
