@@ -1,0 +1,33 @@
+{
+  "_note": "Fictional business. Job counts and proof are made up to show the script working. Distances are from Horsforth, Leeds.",
+  "business": {"name": "Holt Heating (fictional)", "lat": 53.841, "lng": -1.638, "max_travel_km": 16, "jobs_target": 8},
+  "towns": [
+    {"name": "Horsforth", "lat": 53.841, "lng": -1.638, "is_base": true, "jobs": 19,
+     "content": {"jobs_with_photos": 7, "reviews_naming_town": 4, "local_facts": ["base", "1930s semis"], "team_or_depot": true}},
+    {"name": "Headingley", "lat": 53.819, "lng": -1.580, "jobs": 14, "competition": "high",
+     "content": {"jobs_with_photos": 6, "reviews_naming_town": 3,
+                 "local_facts": ["Victorian terraces with old back boilers", "student lets: landlord gas safety certificates before September"],
+                 "team_or_depot": false}},
+    {"name": "Rawdon and Yeadon", "lat": 53.858, "lng": -1.684, "jobs": 9, "competition": "low",
+     "content": {"jobs_with_photos": 4, "reviews_naming_town": 2,
+                 "local_facts": ["stone houses on the hill: long flue runs", "flight path: loft boilers in bungalows near the airport"],
+                 "team_or_depot": false}},
+    {"name": "Kirkstall", "lat": 53.816, "lng": -1.600, "jobs": 6, "competition": "medium",
+     "content": {"jobs_with_photos": 2, "reviews_naming_town": 1, "local_facts": ["new-build flats by the retail park"], "team_or_depot": false}},
+    {"name": "Bramley", "lat": 53.806, "lng": -1.638, "jobs": 3,
+     "content": {"jobs_with_photos": 1, "reviews_naming_town": 0, "local_facts": [], "team_or_depot": false}},
+    {"name": "Guiseley", "lat": 53.875, "lng": -1.712, "jobs": 2, "competition": "low",
+     "content": {"jobs_with_photos": 1, "reviews_naming_town": 1, "local_facts": [], "team_or_depot": false}},
+    {"name": "Otley", "lat": 53.905, "lng": -1.692, "jobs": 1,
+     "content": {"jobs_with_photos": 0, "reviews_naming_town": 0, "local_facts": [], "team_or_depot": false}},
+    {"name": "Leeds city centre", "lat": 53.797, "lng": -1.548, "jobs": 2, "monthly_searches": 1000,
+     "demand_source": "Keyword Planner range for 'boiler repair leeds', 1K-10K (reported, shared by the whole city)", "competition": "high",
+     "content": {"jobs_with_photos": 1, "reviews_naming_town": 0, "local_facts": [], "team_or_depot": false}},
+    {"name": "Roundhay", "lat": 53.838, "lng": -1.501, "jobs": 0, "competition": "high",
+     "content": {"jobs_with_photos": 0, "reviews_naming_town": 0, "local_facts": [], "team_or_depot": false}},
+    {"name": "Harrogate", "lat": 53.992, "lng": -1.541, "jobs": 1, "competition": "medium",
+     "content": {"jobs_with_photos": 0, "reviews_naming_town": 0, "local_facts": [], "team_or_depot": false}},
+    {"name": "Wetherby", "lat": 53.928, "lng": -1.386, "jobs": 0,
+     "content": {"jobs_with_photos": 0, "reviews_naming_town": 0, "local_facts": [], "team_or_depot": false}}
+  ]
+}

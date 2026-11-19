@@ -1,0 +1,99 @@
+[
+  {
+    "field": "duplicates",
+    "from": "'Example Plumbing & Heating', Unit 4 old trading estate, 3 reviews, unverified",
+    "to": "Ask Google support to mark it as moved to the current profile, with the 2023 move date and a link to the live profile.",
+    "why": "Old listing at the previous unit still shows on Maps for the phone number and splits reviews."
+  },
+  {
+    "field": "hours",
+    "from": "Open 24 hours, every day",
+    "to": "Mon to Fri 07:30 to 18:00; Sat 08:00 to 13:00; Sun closed",
+    "why": "Nobody answers at night; two recent reviews say 'said open 24 hours, no answer'. Low risk, so it goes first.",
+    "order": 0
+  },
+  {
+    "field": "name",
+    "from": "Example Heating Co | Boiler Repair Walthamstow 24/7",
+    "to": "Example Heating Co",
+    "why": "Name on the vans, invoices and Companies House is 'Example Heating Co'. The extra words are a suspension risk."
+  },
+  {
+    "field": "address",
+    "from": "Address shown: 14 Example Road, London E17 (owner's home)",
+    "to": "Hide the address. Keep it as the verified address.",
+    "why": "Customers don't visit. A service-area business showing an address customers can't visit is a guideline break."
+  },
+  {
+    "field": "service_area",
+    "from": "London",
+    "to": "Walthamstow; Leyton; Leytonstone; Chingford; Highams Park; Woodford Green",
+    "why": "Where the jobs actually are (reported). Describes the area; it won't widen rankings on its own."
+  },
+  {
+    "field": "primary_category",
+    "from": "Plumber",
+    "to": "Heating contractor",
+    "why": "2 of 3 businesses beating you for 'boiler installation' use it, and installs are your highest-value job."
+  },
+  {
+    "field": "secondary_categories",
+    "from": "Bathroom remodeler; Drainage service",
+    "to": "Plumber; Gas engineer (remove Bathroom remodeler and Drainage service)",
+    "why": "All 3 competitors list Gas engineer. You stopped bathrooms in 2025 and subcontract drains."
+  },
+  {
+    "field": "services",
+    "from": "Plumbing; Heating; Bathrooms; Drains",
+    "to": "Boiler installation: New combi and system boilers fitted by our own Gas Safe engineers, with the old boiler removed and the system flushed. Fixed quote after a free home survey, across Walthamstow, Leyton and Chingford.\nBoiler repair: Boiler not firing, losing pressure or showing a fault code? One of our Gas Safe engineers diagnoses it on the first visit and carries common parts for the main brands. Walthamstow, Leyton and Chingford.\nBoiler service: Annual boiler service by a Gas Safe engineer: safety checks, flue and pressure tests, and a written record for your manufacturer warranty. Usually under an hour, at your home.\nLandlord gas safety certificate: The yearly gas safety check and CP12 record for rented homes, covering every gas appliance and flue. We can book it in with your tenant directly.\nCentral heating installation: New or upgraded central heating: boiler, pipework, radiators and controls, designed for your home and fitted by our own engineers.\nPowerflush: A powerflush clears sludge from radiators and pipework so the heating warms up evenly again. Often worth doing before or after a new boiler.\nRadiator installation: New, moved or replaced radiators, including column and designer radiators, fitted and balanced with the rest of your system.\nPlumbing repairs: Leaks, taps, toilets, valves and pipework repaired by the same engineers who look after your heating.",
+    "why": "None of your 3 money searches is named as a service. Competitors list boiler repair (3 of 3), installation and service (2 of 3)."
+  },
+  {
+    "field": "products",
+    "from": "None",
+    "to": "Combi boiler installation: from £2,400, fitted, with the old boiler removed and a free home survey first. Links to /boiler-installation/.\nBoiler service: £95, Gas Safe service with a written record. Links to /boiler-service/.",
+    "why": "Prices are the first thing people ask on the phone (reported); no competitor shows them, so this helps you get chosen."
+  },
+  {
+    "field": "description",
+    "from": "Example Heating Co are a reliable and professional plumbing and heating company serving London and surrounding areas. We offer all aspects of plumbing, heating and bathrooms. Call us today!",
+    "to": "Example Heating Co is a family-run team of Gas Safe registered engineers fitting, repairing and servicing boilers across Walthamstow, Leyton and Chingford. Most of our work is new combi and system boiler installations, with a fixed quote after a free home survey, alongside boiler repairs and annual services. Every job is done by one of our own three engineers, never subcontracted. We also handle landlord gas safety certificates, powerflushing, radiators and central heating upgrades. Trading in east London since 2011, with manufacturer-backed guarantees on the boilers we fit. Call or request a quote online and we can usually visit the same week.",
+    "why": "Current text is generic, mentions bathrooms you no longer fit, and says nothing a customer can check."
+  },
+  {
+    "field": "attributes",
+    "from": "None set",
+    "to": "Onsite services: yes. Online estimates: yes. Debit and credit cards: yes. (Use the names your attributes screen shows.)",
+    "why": "True attributes missing; they show on the profile and in filters."
+  },
+  {
+    "field": "booking_link",
+    "from": "Empty",
+    "to": "https://example-heating.co.uk/quote/",
+    "why": "The quote form exists and works on a phone; the profile doesn't link to it."
+  },
+  {
+    "field": "website",
+    "from": "https://example-heating.co.uk/",
+    "to": "https://example-heating.co.uk/boiler-installation/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+    "why": "Homepage lists 11 services. Installs are the top revenue job and the page is live."
+  },
+  {
+    "field": "photos",
+    "from": "9 photos, 6 stock",
+    "to": "Shot list in the photo plan: logo, cover (van), 3 of the team, 8 finished jobs now, then 3 a month.",
+    "why": "Competitors show 40 to 120 photos of real jobs (counted from your Maps screenshots). Helps people choose."
+  },
+  {
+    "field": "qa",
+    "from": "2 unanswered questions",
+    "to": "Answer both (copy block below).",
+    "why": "Unanswered questions sit on the profile for every visitor to see."
+  },
+  {
+    "field": "posts",
+    "from": "Last post 14 months ago",
+    "to": "Four posts below, one a week from the low-risk day.",
+    "why": "For people looking at the profile, not for rankings."
+  }
+]

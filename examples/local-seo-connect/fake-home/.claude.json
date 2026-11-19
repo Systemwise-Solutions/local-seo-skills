@@ -1,0 +1,41 @@
+{
+  "numStartups": 12,
+  "mcpServers": {
+    "dfs-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "dataforseo-mcp-server"
+      ],
+      "env": {
+        "DATAFORSEO_USERNAME": "FAKE-not-a-real-login",
+        "DATAFORSEO_PASSWORD": "FAKE-not-a-real-password"
+      }
+    },
+    "local-falcon-mcp": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://mcp.localfalcon.com/?local_falcon_api_key=FAKE_KEY_123"
+      ]
+    }
+  },
+  "projects": {
+    "C:/Users/example/old-website-project": {
+      "mcpServers": {
+        "gsc": {
+          "type": "stdio",
+          "command": "npx",
+          "args": [
+            "-y",
+            "search-console-mcp"
+          ],
+          "env": {
+            "GOOGLE_APPLICATION_CREDENTIALS": "C:/Users/example/FAKE-creds.json"
+          }
+        }
+      }
+    }
+  }
+}

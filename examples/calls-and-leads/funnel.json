@@ -1,0 +1,16 @@
+{
+  "_note": "Fictional business. Figures are made up to show the script working. Profile figures as the owner read them from the Business Profile performance screen; calls answered and missed from the phone provider's call log; form fills from the website's form inbox; bookings from the job diary.",
+  "business": "Example Roofing, Sutton (fictional)",
+  "periods": [
+    {"label": "Aug-Oct 2025", "months": 3,
+     "views": 11400, "calls": 342, "website_clicks": 465, "directions": 51,
+     "form_fills": 96, "bookings": 141,
+     "calls_answered": 318, "calls_missed": 36,
+     "source": "reported"},
+    {"label": "Aug-Oct 2026", "months": 3,
+     "views": 10900, "calls": 301, "website_clicks": 528, "directions": 47,
+     "form_fills": 22, "bookings": 88,
+     "calls_answered": 219, "calls_missed": 95,
+     "source": "reported"}
+  ]
+}

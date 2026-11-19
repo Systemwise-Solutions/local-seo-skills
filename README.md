@@ -1,26 +1,35 @@
 # Local SEO skills for Claude
 
-A free local SEO audit, the way consultant [Mani Bharij](https://localseoconsultant.net) runs it, built into Claude.
+Consultant [Mani Bharij](https://localseoconsultant.net)'s local SEO methods, as open-source skills you run in Claude.
 
-Tell Claude about your business. It asks a few questions, checks where you rank across your area, your Google Business Profile, your website, reviews, listings and AI answers, then gives you the few fixes that matter in the order to make them, with a 90-day plan.
+Rank across your area in Google Maps, get more calls, recover lost rankings, fix your Business Profile, build pages that rank, get reviews arriving every week and get recommended by AI assistants. For your own business, a brand's locations, or your agency's clients.
 
-It works with no paid tools. It gets sharper if you connect a local SEO data source (a geo-grid MCP server, or your own DataForSEO key).
+Every skill works with no paid tools, and gets sharper when you connect a data source (SearchOps, Local Falcon, BrightLocal, DataForSEO, Search Console, Analytics). Every skill reads the same `local-seo-brief.md`, so you answer the questions once.
 
-## What's in it
+**Not sure where to start?** Pick your goal at [localseoconsultant.net](https://localseoconsultant.net/#start) and get the skills to install, the tools worth connecting and a prompt to paste.
+
+## The skills
 
 | Skill | What it does |
 |---|---|
-| `local-seo-audit` | Tailored intake, six-area audit, Visibility Ladder diagnosis, ranked fix list and 90-day plan. Works for one location, multi-location brands, and agencies auditing a client (white-label). |
+| `local-seo-audit` | Finds the few things stopping you ranking and getting calls, in the order to fix them, with a 90-day plan. |
+| `local-seo-connect` | Works out which data tools would help, then walks you through connecting them to Claude. |
+| `gbp-optimisation` | Compares your Business Profile with the businesses beating you and writes the changes, in a safe order. |
+| `local-pages` | Decides which service and town pages deserve to exist, then writes them. New sites and exact-match domains included. |
+| `review-engine` | SMS, email and QR request flow with the wording, reply templates, and review pace against competitors. |
+| `calls-and-leads` | Finds where enquiries leak, from the profile to the phone, and sets up tracking to prove the fix. |
+| `local-ranking-recovery` | Pins down what dropped and when, lines it up against what changed, and gets it back. Suspensions included. |
+| `local-ai-visibility` | Measures whether ChatGPT, Gemini and Google's AI recommend you across many runs, and closes the source gaps. |
 
-More skills are on the way: service and location pages, review engine, AI search visibility.
+Website and technical SEO (crawling, indexing, migrations, new builds) is covered by the companion pack [SEO for AI Agents](https://github.com/manibharij/seo-for-ai-agents). The local skills hand over to it when a job needs it.
 
 ## Install
 
 ### Claude app (web or desktop): no terminal needed
 
-1. Download [`local-seo-audit.zip`](https://localseoconsultant.net/skills/local-seo-audit.zip).
+1. Download the zip for each skill you want from [localseoconsultant.net/skills](https://localseoconsultant.net/skills/), or from `dist/` after running the build below.
 2. In Claude, turn on code execution: Settings > Capabilities.
-3. Go to Customize > Skills, click +, then Upload a skill, and choose the zip.
+3. Go to Customize > Skills, click +, then Upload a skill, and choose a zip. Repeat for each skill.
 4. Start a new chat and say: "Run a local SEO audit for my business."
 
 ### Claude Code
@@ -30,11 +39,15 @@ More skills are on the way: service and location pages, review engine, AI search
 /plugin install local-seo@mani-bharij
 ```
 
-Then ask for a local SEO audit, or run `/local-seo:local-seo-audit`.
+That installs every skill. Ask for what you need, or call one directly, for example `/local-seo:local-seo-audit`.
 
-To use the skill on its own, copy `plugins/local-seo/skills/local-seo-audit` into `~/.claude/skills/`.
+To use a skill on its own, copy its folder from `plugins/local-seo/skills/` into `~/.claude/skills/`.
 
-## How it works
+### Cursor, Codex, Gemini CLI and other agents
+
+Copy `plugins/local-seo/skills/` into your project and add a line to `AGENTS.md` (or your agent's rules file): "For local SEO tasks, follow the skills in that folder."
+
+## How the audit works
 
 1. **Intake.** Who the audit is for, how many locations, the sector, what's going wrong, and the searches that make money. Claude writes a short brief (`local-seo-brief.md`) and reuses it next time.
 2. **Data check.** It tells you what it can measure with what you have, and what it will ask you to check on your phone.
@@ -51,16 +64,16 @@ To use the skill on its own, copy `plugins/local-seo/skills/local-seo-audit` int
 | A local SEO MCP server connected (for example SearchOps, Local Falcon, BrightLocal) | Uses its geo-grid scans, reviews, citations and AI visibility data instead of asking you. |
 | Your own DataForSEO key (Claude Code) | `scripts/grid.py scan` runs a real geo-grid. It shows the number of requests and waits for a yes before spending anything. |
 
-## Scripts
+## Audit scripts
 
-Python 3, standard library only. Each runs with `--help`.
+Every skill's scripts are Python 3, standard library only, and run with `--help`. The audit's:
 
 - `grid.py`: summarise a geo-grid (strong radius, coverage, who takes over where you drop out) or run one with DataForSEO.
 - `review_velocity.py`: reviews per month, recency and bursts against competitors.
 - `nap_check.py`: name, address and phone across listings.
 - `prioritise.py`: findings into a ranked fix list and 90-day plan.
 
-Try them on the fictional clinic in [`examples/clinic`](examples/clinic).
+Every skill has a fictional worked example in [`examples/`](examples) and test prompts in [`evals/`](evals). Contributing a skill? Read [CONVENTIONS.md](CONVENTIONS.md).
 
 ## Build the zips
 

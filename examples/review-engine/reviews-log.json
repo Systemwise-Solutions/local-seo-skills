@@ -1,0 +1,137 @@
+{
+  "as_of": "2026-11-19",
+  "services": [
+    "physio",
+    "physiotherapy",
+    "sports massage",
+    "back pain",
+    "neck pain",
+    "knee",
+    "shoulder",
+    "rehab",
+    "injury"
+  ],
+  "places": [
+    "Didsbury",
+    "Withington",
+    "Chorlton",
+    "Burnage",
+    "West Didsbury",
+    "Fletcher Moss",
+    "Manchester"
+  ],
+  "reviews": [
+    {
+      "date": "2026-11-04",
+      "rating": 5,
+      "text": "Really helpful with my shoulder after months of putting it off. Clear exercises and I can lift my arm again.",
+      "reply_date": null,
+      "reply_text": null
+    },
+    {
+      "date": "2026-10-21",
+      "rating": 2,
+      "text": "Treatment was fine but I waited 25 minutes past my slot and nobody explained why. Then the invoice was different to what I was quoted.",
+      "reply_date": null,
+      "reply_text": null
+    },
+    {
+      "date": "2026-10-09",
+      "rating": 1,
+      "text": "Terrible. Avoid.",
+      "reply_date": null,
+      "reply_text": null
+    },
+    {
+      "date": "2026-09-28",
+      "rating": 5,
+      "text": "Best physio in Didsbury. Sorted my lower back pain in four sessions.",
+      "reply_date": "2026-10-06",
+      "reply_text": "Thanks so much! Glad your back pain is sorted after your sessions with Tom."
+    },
+    {
+      "date": "2026-09-02",
+      "rating": 5,
+      "text": "Friendly team, easy to book online.",
+      "reply_date": "2026-09-10",
+      "reply_text": "Thank you for the lovely review!"
+    },
+    {
+      "date": "2026-08-15",
+      "rating": 4,
+      "text": "Good sports massage, a bit pricey.",
+      "reply_date": "2026-08-25",
+      "reply_text": "Thank you, we're glad you enjoyed your sports massage."
+    },
+    {
+      "date": "2026-07-19",
+      "rating": 5,
+      "text": "Knee rehab after my ACL op was brilliant. Back running in Fletcher Moss park.",
+      "reply_date": "2026-07-30",
+      "reply_text": "Great to hear your knee is doing well! Keep up the exercises."
+    },
+    {
+      "date": "2026-06-30",
+      "rating": 5,
+      "text": "Lovely clinic.",
+      "reply_date": "2026-07-02",
+      "reply_text": "Thank you!"
+    },
+    {
+      "date": "2026-06-27",
+      "rating": 5,
+      "text": "Great service, highly recommend.",
+      "reply_date": "2026-07-02",
+      "reply_text": "Thanks for the kind words."
+    },
+    {
+      "date": "2026-06-26",
+      "rating": 5,
+      "text": "Very professional.",
+      "reply_date": "2026-07-02",
+      "reply_text": "Thank you!"
+    },
+    {
+      "date": "2026-06-25",
+      "rating": 5,
+      "text": "Helped my neck pain a lot.",
+      "reply_date": "2026-07-02",
+      "reply_text": "Glad we could help your neck!"
+    },
+    {
+      "date": "2026-06-25",
+      "rating": 5,
+      "text": "Excellent.",
+      "reply_date": "2026-07-02",
+      "reply_text": "Thank you!"
+    },
+    {
+      "date": "2026-06-24",
+      "rating": 5,
+      "text": "Fantastic physio.",
+      "reply_date": "2026-07-02",
+      "reply_text": "Thanks!"
+    },
+    {
+      "date": "2026-06-24",
+      "rating": 5,
+      "text": "Would recommend to anyone.",
+      "reply_date": "2026-07-02",
+      "reply_text": "Thank you so much."
+    },
+    {
+      "date": "2026-06-23",
+      "rating": 5,
+      "text": "Great team.",
+      "reply_date": "2026-07-02",
+      "reply_text": "Thank you!"
+    },
+    {
+      "date": "2026-05-11",
+      "rating": 5,
+      "text": "Sports massage before the Manchester marathon, legs felt great.",
+      "reply_date": "2026-05-20",
+      "reply_text": "Thanks, good luck with the next one."
+    }
+  ]
+}

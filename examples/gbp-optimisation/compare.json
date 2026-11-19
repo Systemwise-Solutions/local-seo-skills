@@ -1,0 +1,20 @@
+{
+  "money_searches": ["boiler installation", "boiler repair", "boiler service"],
+  "business": {
+    "name": "Example Heating Co | Boiler Repair Walthamstow 24/7",
+    "signage_name": "Example Heating Co",
+    "areas": ["Walthamstow", "Leyton", "Chingford", "Woodford", "Leytonstone"],
+    "primary": "Plumber",
+    "secondary": ["Bathroom remodeler", "Drainage service"],
+    "services": ["Plumbing", "Heating", "Bathrooms", "Drains"],
+    "offers": ["boiler installation", "boiler repair", "boiler servicing", "central heating installation", "landlord gas safety certificate", "powerflush", "radiator installation", "plumbing repairs", "gas engineer", "plumber", "heating contractor"]
+  },
+  "competitors": [
+    {"name": "Forest Boilers", "primary": "Heating contractor", "secondary": ["Gas engineer", "Plumber"],
+     "services": ["Boiler installation", "Boiler repair", "Boiler servicing", "Landlord gas safety certificate", "Central heating installation", "Powerflush"]},
+    {"name": "Lea Bridge Heating", "primary": "Heating contractor", "secondary": ["Gas engineer", "Air conditioning contractor"],
+     "services": ["New boiler installation", "Boiler repair", "Boiler service", "Underfloor heating", "Gas safety certificate"]},
+    {"name": "E17 Emergency Plumber 24/7 - Walthamstow", "primary": "Plumber", "secondary": ["Gas engineer", "Drainage service"],
+     "services": ["Emergency plumber", "Boiler repair", "Leak repair"]}
+  ]
+}

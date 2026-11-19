@@ -114,9 +114,10 @@ def scan(a):
     if not a.yes:
         print("Dry run. Re-run with --yes to make the requests.", file=sys.stderr)
         return
-    login, password = os.environ.get("DATAFORSEO_LOGIN"), os.environ.get("DATAFORSEO_PASSWORD")
+    login = os.environ.get("DATAFORSEO_LOGIN") or os.environ.get("DATAFORSEO_USERNAME")
+    password = os.environ.get("DATAFORSEO_PASSWORD")
     if not login or not password:
-        sys.exit("Set DATAFORSEO_LOGIN and DATAFORSEO_PASSWORD as environment variables.")
+        sys.exit("Set DATAFORSEO_LOGIN (or DATAFORSEO_USERNAME) and DATAFORSEO_PASSWORD as environment variables.")
     results, cost = [], 0.0
     for lat, lng, r, c in pts:
         task = {"keyword": a.keyword, "location_coordinate": f"{lat},{lng},{a.zoom}z",

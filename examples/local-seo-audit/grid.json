@@ -1,0 +1,311 @@
+{
+  "keyword": "acne scar treatment",
+  "business": "Example Skin Clinic",
+  "center": [
+    51.4613,
+    -0.1156
+  ],
+  "points": [
+    {
+      "lat": 51.4793874,
+      "lng": -0.1444362,
+      "row": 0,
+      "col": 0,
+      "rank": null,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4793874,
+      "lng": -0.1300181,
+      "row": 0,
+      "col": 1,
+      "rank": null,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4793874,
+      "lng": -0.1156,
+      "row": 0,
+      "col": 2,
+      "rank": 14,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4793874,
+      "lng": -0.1011819,
+      "row": 0,
+      "col": 3,
+      "rank": null,
+      "top": [
+        "Brixton Dermatology",
+        "Herne Hill Skin",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4793874,
+      "lng": -0.0867638,
+      "row": 0,
+      "col": 4,
+      "rank": null,
+      "top": [
+        "Brixton Dermatology",
+        "Herne Hill Skin",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4703437,
+      "lng": -0.1444362,
+      "row": 1,
+      "col": 0,
+      "rank": null,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4703437,
+      "lng": -0.1300181,
+      "row": 1,
+      "col": 1,
+      "rank": 9,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4703437,
+      "lng": -0.1156,
+      "row": 1,
+      "col": 2,
+      "rank": 4,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4703437,
+      "lng": -0.1011819,
+      "row": 1,
+      "col": 3,
+      "rank": 8,
+      "top": [
+        "Brixton Dermatology",
+        "Herne Hill Skin",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4703437,
+      "lng": -0.0867638,
+      "row": 1,
+      "col": 4,
+      "rank": null,
+      "top": [
+        "Brixton Dermatology",
+        "Herne Hill Skin",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4613,
+      "lng": -0.1444362,
+      "row": 2,
+      "col": 0,
+      "rank": 12,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4613,
+      "lng": -0.1300181,
+      "row": 2,
+      "col": 1,
+      "rank": 3,
+      "top": [
+        "Example Skin Clinic",
+        "Brixton Dermatology",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4613,
+      "lng": -0.1156,
+      "row": 2,
+      "col": 2,
+      "rank": 1,
+      "top": [
+        "Example Skin Clinic",
+        "Brixton Dermatology",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4613,
+      "lng": -0.1011819,
+      "row": 2,
+      "col": 3,
+      "rank": 2,
+      "top": [
+        "Example Skin Clinic",
+        "Brixton Dermatology",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4613,
+      "lng": -0.0867638,
+      "row": 2,
+      "col": 4,
+      "rank": 11,
+      "top": [
+        "Brixton Dermatology",
+        "Herne Hill Skin",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4522563,
+      "lng": -0.1444362,
+      "row": 3,
+      "col": 0,
+      "rank": null,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4522563,
+      "lng": -0.1300181,
+      "row": 3,
+      "col": 1,
+      "rank": 6,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4522563,
+      "lng": -0.1156,
+      "row": 3,
+      "col": 2,
+      "rank": 2,
+      "top": [
+        "Example Skin Clinic",
+        "Brixton Dermatology",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4522563,
+      "lng": -0.1011819,
+      "row": 3,
+      "col": 3,
+      "rank": 7,
+      "top": [
+        "Brixton Dermatology",
+        "Herne Hill Skin",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4522563,
+      "lng": -0.0867638,
+      "row": 3,
+      "col": 4,
+      "rank": null,
+      "top": [
+        "Brixton Dermatology",
+        "Herne Hill Skin",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4432126,
+      "lng": -0.1444362,
+      "row": 4,
+      "col": 0,
+      "rank": null,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4432126,
+      "lng": -0.1300181,
+      "row": 4,
+      "col": 1,
+      "rank": null,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4432126,
+      "lng": -0.1156,
+      "row": 4,
+      "col": 2,
+      "rank": 13,
+      "top": [
+        "Skin Clinic Clapham",
+        "Brixton Dermatology",
+        "Stockwell Skin"
+      ]
+    },
+    {
+      "lat": 51.4432126,
+      "lng": -0.1011819,
+      "row": 4,
+      "col": 3,
+      "rank": null,
+      "top": [
+        "Brixton Dermatology",
+        "Herne Hill Skin",
+        "Skin Clinic Clapham"
+      ]
+    },
+    {
+      "lat": 51.4432126,
+      "lng": -0.0867638,
+      "row": 4,
+      "col": 4,
+      "rank": null,
+      "top": [
+        "Brixton Dermatology",
+        "Herne Hill Skin",
+        "Skin Clinic Clapham"
+      ]
+    }
+  ],
+  "source": "Fictional example"
+}

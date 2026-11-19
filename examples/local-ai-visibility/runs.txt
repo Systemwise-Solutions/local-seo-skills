@@ -1,0 +1,231 @@
+business: Example Physio | Example Physiotherapy Clifton | example-physio.co.uk
+competitor: Avonside Physio | avonsidephysio.example
+competitor: Downs Movement Clinic | downsmovement.example
+
+=== ChatGPT | best physio in Clifton Bristol
+A few clinics people recommend:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: yell.com, doctify.com, avonsidephysio.example
+
+=== ChatGPT | best physio in Clifton Bristol
+Here are some well-regarded options:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Hotwells Back Care**: Chiropractic and physio under one roof near the harbour.
+Check availability and whether they offer a free initial call before booking.
+Sources: doctify.com, reddit.com
+
+=== ChatGPT | best physio in Clifton Bristol
+A few clinics people recommend:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Example Physio**: Chartered physios in Clifton village; sports injuries and back pain, from £55 an assessment.
+3. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+Check availability and whether they offer a free initial call before booking.
+Sources: doctify.com, example-physio.co.uk
+
+=== ChatGPT | physio for running injury near Clifton
+Good places to start:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: yell.com, bristol-guide.example
+
+=== ChatGPT | physio for running injury near Clifton
+Here are some well-regarded options:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+3. **Hotwells Back Care**: Chiropractic and physio under one roof near the harbour.
+Check availability and whether they offer a free initial call before booking.
+Sources: reddit.com, doctify.com
+
+=== ChatGPT | physio for running injury near Clifton
+Here are some well-regarded options:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Example Physio**: Chartered physios in Clifton village; sports injuries and back pain, from £55 an assessment.
+Check availability and whether they offer a free initial call before booking.
+Sources: avonsidephysio.example, doctify.com
+
+=== ChatGPT | who should I see for back pain in Bristol, physio recommendations
+Good places to start:
+1. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+2. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: doctify.com, bristol-guide.example
+
+=== ChatGPT | who should I see for back pain in Bristol, physio recommendations
+Here are some well-regarded options:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Hotwells Back Care**: Chiropractic and physio under one roof near the harbour.
+Check availability and whether they offer a free initial call before booking.
+Sources: yell.com, reddit.com
+
+=== ChatGPT | who should I see for back pain in Bristol, physio recommendations
+A few clinics people recommend:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+3. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+Check availability and whether they offer a free initial call before booking.
+Sources: doctify.com
+
+=== Gemini | best physio in Clifton Bristol
+Good places to start:
+1. **Example Physio**: Chartered physios in Clifton village; sports injuries and back pain, from £55 an assessment.
+2. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+3. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+Check availability and whether they offer a free initial call before booking.
+Sources: example-physio.co.uk, avonsidephysio.example
+
+=== Gemini | best physio in Clifton Bristol
+Here are some well-regarded options:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Example Physio**: Chartered physios in Clifton village; sports injuries and back pain, from £55 an assessment.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: avonsidephysio.example, example-physio.co.uk
+
+=== Gemini | best physio in Clifton Bristol
+Good places to start:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: avonsidephysio.example, downsmovement.example
+
+=== Gemini | physio for running injury near Clifton
+Here are some well-regarded options:
+1. **Example Physio**: Chartered physios in Clifton village; sports injuries and back pain, from £55 an assessment.
+2. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+3. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+Check availability and whether they offer a free initial call before booking.
+Sources: example-physio.co.uk
+
+=== Gemini | physio for running injury near Clifton
+Here are some well-regarded options:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Hotwells Back Care**: Chiropractic and physio under one roof near the harbour.
+Check availability and whether they offer a free initial call before booking.
+Sources: downsmovement.example, avonsidephysio.example
+
+=== Gemini | physio for running injury near Clifton
+Here are some well-regarded options:
+1. **Example Physio**: Chartered physios in Clifton village; sports injuries and back pain, from £55 an assessment.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+Check availability and whether they offer a free initial call before booking.
+Sources: example-physio.co.uk, downsmovement.example
+
+=== Gemini | who should I see for back pain in Bristol, physio recommendations
+A few clinics people recommend:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Example Physio**: Chartered physios in Clifton village; sports injuries and back pain, from £55 an assessment.
+3. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+Check availability and whether they offer a free initial call before booking.
+Sources: avonsidephysio.example, example-physio.co.uk
+
+=== Gemini | who should I see for back pain in Bristol, physio recommendations
+A few clinics people recommend:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: avonsidephysio.example, reddit.com
+
+=== Gemini | who should I see for back pain in Bristol, physio recommendations
+Here are some well-regarded options:
+1. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+2. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+3. **Example Physio**: Chartered physios in Clifton village; sports injuries and back pain, from £55 an assessment.
+Check availability and whether they offer a free initial call before booking.
+Sources: downsmovement.example, example-physio.co.uk
+
+=== Perplexity | best physio in Clifton Bristol
+Here are some well-regarded options:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: bristol-guide.example, doctify.com, reddit.com
+
+=== Perplexity | best physio in Clifton Bristol
+Here are some well-regarded options:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Hotwells Back Care**: Chiropractic and physio under one roof near the harbour.
+Check availability and whether they offer a free initial call before booking.
+Sources: bristol-guide.example, topdoctors.co.uk
+
+=== Perplexity | best physio in Clifton Bristol
+Good places to start:
+1. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+2. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: bristol-guide.example, doctify.com
+
+=== Perplexity | physio for running injury near Clifton
+A few clinics people recommend:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: reddit.com, bristol-guide.example
+
+=== Perplexity | physio for running injury near Clifton
+Here are some well-regarded options:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Example Physio**: Chartered physios in Clifton village; sports injuries and back pain, from £55 an assessment.
+3. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+Check availability and whether they offer a free initial call before booking.
+Sources: bristol-guide.example, example-physio.co.uk
+
+=== Perplexity | physio for running injury near Clifton
+Good places to start:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Hotwells Back Care**: Chiropractic and physio under one roof near the harbour.
+Check availability and whether they offer a free initial call before booking.
+Sources: bristol-guide.example, doctify.com
+
+=== Perplexity | who should I see for back pain in Bristol, physio recommendations
+Here are some well-regarded options:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: topdoctors.co.uk, bristol-guide.example
+
+=== Perplexity | who should I see for back pain in Bristol, physio recommendations
+Here are some well-regarded options:
+1. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+2. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+3. **Hotwells Back Care**: Chiropractic and physio under one roof near the harbour.
+Check availability and whether they offer a free initial call before booking.
+Sources: bristol-guide.example, reddit.com
+
+=== Perplexity | who should I see for back pain in Bristol, physio recommendations
+Good places to start:
+1. **Avonside Physio**: Large team, sports injuries and running assessments, evening appointments.
+2. **Downs Movement Clinic**: Pilates-led rehab and post-surgery physio; well reviewed on Doctify.
+3. **Physio Lane Clinic**: Small practice near Whiteladies Road; good for neck and shoulder pain.
+Check availability and whether they offer a free initial call before booking.
+Sources: doctify.com, bristol-guide.example
+
+=== Google AI Overviews | best physio in Clifton Bristol
+Top-rated physiotherapy clinics in Clifton include Avonside Physio, Example Physio and Downs Movement Clinic.
+Sources: example-physio.co.uk, avonsidephysio.example, doctify.com
+
+=== Google AI Overviews | best physio in Clifton Bristol
+Top-rated physiotherapy clinics in Clifton include Avonside Physio, Downs Movement Clinic and Physio Lane Clinic.
+Sources: avonsidephysio.example, doctify.com
+
+=== Google AI Overviews | best physio in Clifton Bristol
+Top-rated physiotherapy clinics in Clifton include Example Physio, Avonside Physio and Downs Movement Clinic.
+Sources: example-physio.co.uk, downsmovement.example
